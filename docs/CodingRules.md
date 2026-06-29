@@ -1,1 +1,5 @@
-
+- Une classe = une responsabilité.
+- Aucun scénario dans le moteur.
+- Aucune coordonnée codée en dur.
+- Tout est piloté par les données.
+- Une fonctionnalité n'est développée qu'une seule fois.
