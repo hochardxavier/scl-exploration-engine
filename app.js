@@ -1,7 +1,7 @@
-/*import Engine from "./engine/Engine.js";
+import Engine from "./engine/Engine.js";
 
 const engine = new Engine();
 
-engine.init();*/
+engine.init();
 
-console.log("app.js chargé !");
+
