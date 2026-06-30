@@ -15,7 +15,7 @@ export default class Engine {
     }
 
     init() {
-
+        console.log("One");
         this.log("initialisation du moteur");
 
         this.canvas = document.getElementById("gameCanvas");
