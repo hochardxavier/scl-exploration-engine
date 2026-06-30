@@ -3,7 +3,7 @@ export default class Engine {
     static VERSION = "0.1.0-alpha1";
 
     log(message) {
-        console.log('SCL Exploration Engine ${Engine.VERSION}');
+        console.log(`SCL Exploration Engine ${Engine.VERSION}`);
         console.log(message);
     }
 
