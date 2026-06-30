@@ -34,7 +34,7 @@ export default class Engine {
 
         this.render();
 
-        requestAnimationFrame(() => this.loop());
+        requestAnimationFrame(() => this.tick());
     }
 
     update() {
