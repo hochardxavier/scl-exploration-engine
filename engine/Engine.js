@@ -1,6 +1,6 @@
 export default class Engine {
 
-    static VERSION = "0.1.0-alpha1";
+    //static VERSION = "0.1.0-alpha1";
 
     /*log(message) {
         console.log("SCL Exploration Engine " + Engine.VERSION);
@@ -15,7 +15,7 @@ export default class Engine {
     }
 
     init() {
-        console.log("One");
+        console.log("SCL Exploration Engine 0.1.0-alpha1");
         //this.log("initialisation du moteur");
 
         this.canvas = document.getElementById("gameCanvas");
