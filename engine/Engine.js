@@ -16,7 +16,7 @@ export default class Engine {
 
     init() {
 
-        this.log("init");
+        this.log("initialisation du moteur");
 
         this.canvas = document.getElementById("gameCanvas");
         this.ctx = this.canvas.getContext("2d");
