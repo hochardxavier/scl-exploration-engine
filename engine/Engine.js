@@ -10,6 +10,7 @@ export default class Engine {
     init() {
 
         console.log("SCL Exploration Engine v0.1.0");
+        console.log("controle déployement - 1");
 
         this.canvas = document.getElementById("gameCanvas");
         this.ctx = this.canvas.getContext("2d");
@@ -19,10 +20,10 @@ export default class Engine {
     }
     
     start () {
-        this.loop();
+        this.tick();
     }
 
-    loop() {
+    tick() {
         this.update();
 
         this.render();
@@ -45,5 +46,13 @@ export default class Engine {
             this.canvas.heigt
         );
         
+    }
+
+    stop() {
+
+    }
+
+    destroy() {
+
     }
 }
