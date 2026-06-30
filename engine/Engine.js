@@ -11,7 +11,7 @@ export default class Engine {
 
     init() {
         console.log("SCL Exploration Engine 0.1.0-alpha1");
-        console.log ("controle de déployement - 1); 
+        console.log ("controle de déployement - 1"); 
 
         this.canvas = document.getElementById("gameCanvas");
         this.ctx = this.canvas.getContext("2d");
