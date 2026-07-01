@@ -1,1 +1,6 @@
-
+{
+    "id": "scene01",
+    "name": "Première scène",
+    "background": "assets/scenes/cave01.jpg",
+    "objects": []
+}
