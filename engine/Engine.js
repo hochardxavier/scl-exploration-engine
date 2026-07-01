@@ -11,7 +11,7 @@ export default class Engine {
 
         this.sceneLoader = new SceneLoader();
         this.scene = null;
-        this.background = new Image();
+        //this.background = new Image();
         
     }
 
