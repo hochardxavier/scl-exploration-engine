@@ -1,6 +1,6 @@
 {
     "id": "scene01",
     "name": "Première scène",
-    "background": "assets/scenes/cave01.jpg",
+    "background": "assets/scenes/cave01.jfif",
     "objects": []
 }
