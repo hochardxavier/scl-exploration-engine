@@ -13,6 +13,7 @@ export default class Engine {
         this.sceneLoader = new SceneLoader();
         this.scene = null;
         this.background = new Image();
+        this.flashlight = new Flashlight(this);
         
     }
 
@@ -32,6 +33,7 @@ export default class Engine {
 
         this.background.onload = () => {
 
+            this.flashlight.init();
             this.start();
 
         };
@@ -52,6 +54,8 @@ export default class Engine {
 
     update() {
 
+        this.flashlight.update();
+
     }
 
     render() {
@@ -63,6 +67,8 @@ export default class Engine {
             this.canvas.width,
             this.canvas.height
         );
+
+        this.flashlight.render();
 
     }
 
