@@ -1,4 +1,5 @@
 import SceneLoader from "./SceneLoader.js";
+import Flashlight from "./Flashlight.js";
 
 export default class Engine {
 
