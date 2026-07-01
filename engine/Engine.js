@@ -1,3 +1,5 @@
+import SceneLoader from "./SceneLoader.js";
+
 export default class Engine {
 
     //static VERSION = "0.1.0-alpha1";
@@ -6,12 +8,16 @@ export default class Engine {
 
         this.canvas = null;
         this.ctx = null;
+
+        this.sceneLoader = new SceneLoader();
+        this.scene = null;
+        this.background = new Image();
         
     }
 
-    init() {
-        console.log("SCL Exploration Engine 0.1.0-alpha1");
-        console.log ("controle de déployement - 1"); 
+    async init() {
+
+        console.log("SCL Exploration Engine v0.1.0-alpha2");
 
         this.canvas = document.getElementById("gameCanvas");
         this.ctx = this.canvas.getContext("2d");
@@ -19,7 +25,15 @@ export default class Engine {
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
 
-        this.start();
+        this.scene = await this.sceneLoader.load("data/scenes/scene01.json");
+
+        this.background.src = this.scene.background;
+
+        this.background.onload = () => {
+
+            this.start();
+
+        };
 
     }
     
@@ -41,15 +55,14 @@ export default class Engine {
 
     render() {
 
-        this.ctx.fillStyle = "#202040";
-
-        this.ctx.fillRect(
+        this.ctx.drawImage(
+            this.background,
             0,
             0,
             this.canvas.width,
             this.canvas.height
         );
-        
+
     }
 
     stop() {
