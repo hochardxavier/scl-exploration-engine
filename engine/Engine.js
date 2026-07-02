@@ -1,5 +1,6 @@
 import SceneLoader from "./SceneLoader.js";
 import Flashlight from "./Flashlight.js";
+import Renderer from "./Renderer.js";
 
 export default class Engine {
 
@@ -10,6 +11,7 @@ export default class Engine {
         this.canvas = null;
         this.ctx = null;
 
+        this.renderer = new Renderer(this);
         this.sceneLoader = new SceneLoader();
         this.scene = null;
         this.background = new Image();
@@ -60,15 +62,7 @@ export default class Engine {
 
     render() {
 
-        this.ctx.drawImage(
-            this.background,
-            0,
-            0,
-            this.canvas.width,
-            this.canvas.height
-        );
-
-        this.flashlight.render();
+      this.renderer.render();  
 
     }
 
