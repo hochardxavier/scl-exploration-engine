@@ -49,10 +49,10 @@ export default class Flashlight {
         gradient.addColorStop(0.2, "rgba(0, 0, 0, 0)");
 
         //milieu du halo : commence à s'assombrir
-        gradient.addColorStop(0.6, 'rgba(0, 0, 0, ${this.intensity * 0.6})');
+        gradient.addColorStop(0.6, `rgba(0, 0, 0, ${this.intensity * 0.6})`);
 
         // bord du halo : noir opaque
-        gradient.addColorStop(1, 'rgba(0, 0, 0, ${this.intensity})');
+        gradient.addColorStop(1, `rgba(0, 0, 0, ${this.intensity})`);
 
         //dessine le voile avec le dégradé
         ctx.fillStyle = gradient;
