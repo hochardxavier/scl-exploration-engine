@@ -18,7 +18,7 @@ Toutes les scènes sont décrites à l'aide de fichiers JSON.
 - Inventaire
 - Popups
 - Effets sonores
-- États des objets
+- États des objets 
 - Transitions entre scènes
 - Sauvegarde de progression
 
