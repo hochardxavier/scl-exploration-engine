@@ -14,6 +14,9 @@ export default class SceneLoader {
 
     async loadTexture(path) {
 
+        const image = new Image();
+        image.src = path;
+
     }
 
 }
