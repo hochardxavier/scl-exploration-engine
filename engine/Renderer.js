@@ -8,10 +8,19 @@ export default class Renderer {
 
     render() {
 
+        this.renderBackground();
+
+        this.renderObjects();
+
+        this.renderFlashlight();
+
+    }
+
+    renderBackground() {
+
         const ctx = this.engine.ctx;
         const canvas = this.engine.canvas;
 
-        // Dessine le fond
         ctx.drawImage(
             this.engine.background,
             0,
@@ -20,9 +29,18 @@ export default class Renderer {
             canvas.height
         );
 
-        // Dessine la lampe
+    }
+
+    renderFlashlight() {
+
         this.engine.flashlight.render();
+        
+    }
+
+    renderObjects() {
 
     }
+    
+    
 
 }
