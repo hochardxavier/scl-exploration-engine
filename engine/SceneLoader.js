@@ -14,8 +14,19 @@ export default class SceneLoader {
 
     async loadTexture(path) {
 
-        const image = new Image();
-        image.src = path;
+        return new Promise((resolve, reject) => {
+        
+            const image = new Image();
+
+            image.onload = () => resolve(image);
+
+            image.onerror = () => reject(
+                new Error(`Impossible de charger : ${path}`)
+            );
+        
+            image.src = path;
+
+        });
 
     }
 
