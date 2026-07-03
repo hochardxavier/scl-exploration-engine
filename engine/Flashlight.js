@@ -20,12 +20,13 @@ export default class Flashlight {
 
         canvas.addEventListener("pointermove", (event) => {
 
-        this.updatePosition(
-            event.clientX,
-            event.clientY
-        );
+            this.updatePosition(
+                event.clientX,
+                event.clientY
+            );
 
-    }
+        };
+     }
 
     updatePosition(clientX, clientY) {
 
