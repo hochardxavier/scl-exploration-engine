@@ -2,7 +2,7 @@
     "id": "scene01",
     "name": "Première scène",
     "background": "assets/scenes/cave001.png",
-    "sprites": [
+    "objects": [
         {
             "id": "paper01",
             "image": "assets/sprites/paper01.png",
