@@ -21,7 +21,7 @@ export default class Engine {
 
     async init() {
 
-        console.log("SCL Exploration Engine v0.1.0-alpha2 --- D3");
+        console.log("SCL Exploration Engine v0.1.0-alpha4 --- D1");
 
         this.canvas = document.getElementById("gameCanvas");
         this.ctx = this.canvas.getContext("2d");
