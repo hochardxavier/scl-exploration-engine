@@ -39,6 +39,8 @@ export default class Renderer {
 
     renderObjects() {
 
+        console.log(this.engine.scene.objects);
+        
     }
     
     
