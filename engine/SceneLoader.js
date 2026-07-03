@@ -8,6 +8,12 @@ export default class SceneLoader {
 
         const data = await response.json();
 
+        for (const object of data.objects) {
+
+            object.texture = await this.loadTexture(object.image);
+
+        }
+
         return new Scene(data);
 
     }
