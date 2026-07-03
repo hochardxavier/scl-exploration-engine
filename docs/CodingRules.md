@@ -1,26 +1,63 @@
+# Coding Rules
+
+## Principes généraux
+
 - Une classe = une responsabilité.
-- Aucun scénario dans le moteur.
+- Le moteur ne contient aucun scénario.
+- Les scènes sont entièrement pilotées par les données.
 - Aucune coordonnée codée en dur.
-- Tout est piloté par les données.
 - Une fonctionnalité n'est développée qu'une seule fois.
-  
-Ajout du 30/06/2026 :
-# Cycle de vie d'un composant
+- Une nouvelle classe n'est créée que lorsqu'elle répond à un besoin réel.
+- Une architecture validée n'est plus remise en question sans raison majeure.
+
+---
+
+## Cycle de vie d'un composant
 
 constructor()
-→ Prépare les propriétés de l'objet.
+
+Prépare uniquement les propriétés internes.
+
+Ne charge aucune ressource.
+
+---
 
 init()
-→ Initialise les ressources externes.
+
+Initialise les ressources externes.
+
+Chargement d'images, création des listeners...
+
+---
 
 start()
-→ Lance le fonctionnement.
+
+Démarre le composant.
+
+---
 
 update()
-→ Met à jour la logique.
+
+Met à jour la logique.
+
+Aucun dessin.
+
+---
 
 render()
-→ Dessine.
+
+Dessine uniquement.
+
+Aucune logique métier.
+
+---
+
+stop()
+
+Arrête le fonctionnement sans détruire le composant.
+
+---
 
 destroy()
-→ Libère les ressources (à venir).
+
+Libère toutes les ressources.
