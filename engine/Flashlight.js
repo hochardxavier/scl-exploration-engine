@@ -25,7 +25,7 @@ export default class Flashlight {
                 event.clientY
             );
 
-        };
+        }
      }
 
     updatePosition(clientX, clientY) {
