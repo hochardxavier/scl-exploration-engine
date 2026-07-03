@@ -12,4 +12,8 @@ export default class SceneLoader {
 
     }
 
+    async loadTexture(path) {
+
+    }
+
 }
