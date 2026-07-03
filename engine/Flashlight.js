@@ -16,14 +16,23 @@ export default class Flashlight {
 
         const canvas = this.engine.canvas;
 
-        canvas.addEventListener("mousemove", (event) => {
+        canvas.style.touchAction = "none";
 
-            const rect = canvas.getBoundingClientRect();
+        canvas.addEventListener("pointermove", (event) => {
 
-            this.x = event.clientX - rect.left;
-            this.y = event.clientY - rect.top;
+        this.updatePosition(
+            event.clientX,
+            event.clientY
+        );
 
-        });
+    }
+
+    updatePosition(clientX, clientY) {
+
+        const rect = this.engine.canvas.getBoundingClientRect();
+
+        this.x = clientX - rect.left;
+        this.y = clientY - rect.top;
 
     }
 
