@@ -1,29 +1,52 @@
 # CHANGELOG
 
-## v0.1.0
+Toutes les évolutions importantes du SCL Exploration Engine sont documentées dans ce fichier.
 
-Création du projet.
+---
 
-- Architecture
-- Documentation
-- Début du moteur
+## v0.1.0-alpha3 (02/07/2026)
 
-ajout du 30/06/2026 : 
-## v0.1.0-alpha1
+### Nouveautés
 
-✔ Initialisation du moteur
+- ✔ Chargement des scènes via JSON
+- ✔ Affichage dynamique d'une image de fond
+- ✔ Premier système d'éclairage dynamique
+- ✔ Lampe torche suivant le pointeur
+- ✔ Création du composant `Renderer`
+- ✔ Séparation du rendu graphique de l'Engine
 
-✔ Boucle de rendu
+### Architecture
 
-✔ Premier affichage Canvas
+- Refactorisation de l'Engine.
+- Le rendu graphique est désormais entièrement confié au `Renderer`.
 
-ajout du 02/07/2026 :
-## v0.1.0-alpha3
+---
 
-✔ Chargement d'une scène JSON
+## v0.1.0-alpha2 (01/07/2026)
 
-✔ Affichage d'une image de fond
+### Nouveautés
 
-✔ Premier système d'éclairage dynamique
+- ✔ Chargement asynchrone des scènes
+- ✔ Premier SceneLoader
+- ✔ Chargement des ressources graphiques
 
-✔ Lampe torche suivant la souris
+---
+
+## v0.1.0-alpha1 (30/06/2026)
+
+### Nouveautés
+
+- ✔ Initialisation du moteur
+- ✔ Boucle de rendu temps réel
+- ✔ Premier affichage Canvas
+
+---
+
+## v0.1.0 (30/06/2026)
+
+### Initialisation du projet
+
+- Création du dépôt GitHub
+- Mise en place de l'architecture initiale
+- Création de la documentation
+- Début du développement du moteur
