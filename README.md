@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Le **SCL Exploration Engine** est un moteur d'exploration interactif développé pour les enquêtes de **Stranger Code Legacy**.
+Le **SCL Exploration Engine** est un moteur d'exploration interactif développé pour les enquêtes de **Stranger Code Legacy**. 
 
 Son objectif est de permettre la création d'enquêtes immersives où le monde réel et le numérique se complètent, sans jamais modifier le moteur lui-même.
 
