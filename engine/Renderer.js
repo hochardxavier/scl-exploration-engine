@@ -41,16 +41,17 @@ export default class Renderer {
 
         const ctx = this.engine.ctx;
 
-        const object = this.engine.scene.objects[0];
+        for (const object of this.engine.scene.objects) {
 
-        ctx.drawImage(
-            object.texture,
-            100,
-            100
-        );
-        
+            ctx.drawImage(
+                object.texture,
+                100,
+                100
+            );
+
+        }
+
     }
     
-    
 
-}
+} //fin du code
