@@ -7,7 +7,7 @@
             "id": "paper01",
             "image": "assets/sprites/paper01.png",
             "x": 50,
-            "y": 0,
+            "y": 50,
             "width": 5,
             "height": 5,
             "visible": true
