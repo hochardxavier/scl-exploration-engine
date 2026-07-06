@@ -47,7 +47,7 @@ export default class Renderer {
             object.texture,
             100,
             100
-);
+        );
         
     }
     
