@@ -47,7 +47,7 @@ export default class Renderer {
               const x = canvas.width * object.x / 100 - object.texture.width / 2;     //const x = canvas.width * object.x / 100;
               const y = canvas.height * object.y / 100 - object.texture.height / 2;   //const y = canvas.height * object.y / 100;
 
-            //
+            /*
             ctx.strokeStyle = "red";
             ctx.strokeRect(
             x,
@@ -55,7 +55,7 @@ export default class Renderer {
             object.texture.width,
             object.texture.height
             );
-            //
+            */
             
             ctx.drawImage(
                 object.texture,
