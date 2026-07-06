@@ -53,6 +53,12 @@ export default class Renderer {
                 y
             );
 
+            console.log(
+                "canvas :", canvas.width, canvas.height,
+                "| objet :", object.x, object.y,
+                "| pixels :", x, y
+            );
+
         }
 
     }
