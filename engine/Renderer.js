@@ -44,8 +44,11 @@ export default class Renderer {
 
         for (const object of this.engine.scene.objects) {
 
-              const x = canvas.width * object.x / 100 - object.texture.width / 2;     //const x = canvas.width * object.x / 100;
-              const y = canvas.height * object.y / 100 - object.texture.height / 2;   //const y = canvas.height * object.y / 100;
+            const width = canvas.width * object.width / 100;
+            const height = canvas.height * object.height / 100;
+
+            const x = canvas.width * object.x / 100 - width / 2;
+            const y = canvas.height * object.y / 100 - height / 2;
 
             /*
             ctx.strokeStyle = "red";
@@ -60,14 +63,16 @@ export default class Renderer {
             ctx.drawImage(
                 object.texture,
                 x,
-                y
+                y,
+                width,
+                heigt
             );
 
-            console.log(
+            /*console.log(
                 "canvas :", canvas.width, canvas.height,
                 "| objet :", object.x, object.y,
                 "| pixels :", x, y
-            );
+            );*/
 
         }
 
