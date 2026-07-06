@@ -21,9 +21,6 @@ export default class Renderer {
         const ctx = this.engine.ctx;
         const canvas = this.engine.canvas;
 
-        const x = canvas.width * object.x / 100;
-        const y = canvas.height * object.y / 100;
-
         ctx.drawImage(
             this.engine.background,
             0,
@@ -43,8 +40,12 @@ export default class Renderer {
     renderObjects() {
 
         const ctx = this.engine.ctx;
+        const canvas = this.engine.canvas;
 
         for (const object of this.engine.scene.objects) {
+
+            const x = canvas.width * object.x / 100;
+            const y = canvas.height * object.y / 100;
 
             ctx.drawImage(
                 object.texture,
