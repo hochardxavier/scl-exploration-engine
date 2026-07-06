@@ -65,7 +65,7 @@ export default class Renderer {
                 x,
                 y,
                 width,
-                heigt
+                height
             );
 
             /*console.log(
