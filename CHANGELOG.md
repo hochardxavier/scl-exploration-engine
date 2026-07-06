@@ -1,6 +1,21 @@
 # CHANGELOG
 
 Toutes les évolutions importantes du SCL Exploration Engine sont documentées dans ce fichier.
+---
+## v0.1.0-alpha5 (06/07/2026)
+
+### Nouveautés
+
+- ✔ Préchargement automatique des textures
+- ✔ Chargement des objets depuis les scènes JSON
+- ✔ Affichage des objets par le Renderer
+- ✔ Positionnement des objets en coordonnées relatives (%)
+- ✔ Point d'ancrage des objets centré
+
+### Architecture
+
+- Les ressources graphiques sont désormais chargées par `SceneLoader`.
+- Le `Renderer` dessine uniquement des ressources déjà préparées.
 
 ---
 ## v0.1.0-alpha4 (03/07/2026)
