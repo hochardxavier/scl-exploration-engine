@@ -39,7 +39,15 @@ export default class Renderer {
 
     renderObjects() {
 
-        console.log(this.engine.scene.objects);
+        const ctx = this.engine.ctx;
+
+        const object = this.engine.scene.objects[0];
+
+        ctx.drawImage(
+            object.texture,
+            100,
+            100
+);
         
     }
     
