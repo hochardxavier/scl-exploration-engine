@@ -61,3 +61,13 @@ Arrête le fonctionnement sans détruire le composant.
 destroy()
 
 Libère toutes les ressources.
+
+---
+
+## Positionnement
+
+Toutes les coordonnées représentent le centre de l'élément.
+
+Cette convention s'applique aux objets, aux interfaces et à tout élément graphique du moteur.
+
+Aucune coordonnée ne représente le coin supérieur gauche.
