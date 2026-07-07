@@ -18,6 +18,7 @@ export default class Engine {
         this.background = new Image();
         this.flashlight = new Flashlight(this);
         this.inputManager = new InputManager(this);
+        this.interactionManager = new InteractionManager(this);
         
     }
 
@@ -32,6 +33,7 @@ export default class Engine {
         this.canvas.height = window.innerHeight;
 
         this.inputManager.init();
+        this.interactionManager.init();
 
         this.scene = await this.sceneLoader.load("data/scenes/scene01.json");
 
@@ -60,6 +62,8 @@ export default class Engine {
 
     update() {
 
+        this.inputManager.update();
+        this.interactionManager.update();
         this.flashlight.update();
 
     }
