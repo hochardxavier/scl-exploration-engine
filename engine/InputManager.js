@@ -22,6 +22,18 @@ export default class InputManager {
 
         });
 
+        canvas.addEventListener("pointerdown", () => {
+
+            this.pointerPressed = true;
+
+        });
+
+        canvas.addEventListener("pointerup", () => {
+
+            this.pointerPressed = false;
+
+        });
+
     }
 
     update() {
