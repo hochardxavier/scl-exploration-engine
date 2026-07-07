@@ -2,6 +2,7 @@ import SceneLoader from "./SceneLoader.js";
 import Flashlight from "./Flashlight.js";
 import Renderer from "./Renderer.js";
 import InputManager from "./InputManager.js";
+import InteractionManager from "./InteractionManager.js";
 
 export default class Engine {
 
