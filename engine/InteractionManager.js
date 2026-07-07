@@ -14,6 +14,12 @@ export default class InteractionManager {
 
     update() {
 
+        for (const object of this.engine.scene.objects) {
+
+            console.log(object.id);
+
+        }
+
     }
 
 }
