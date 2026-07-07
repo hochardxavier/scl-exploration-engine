@@ -47,8 +47,6 @@ export default class InteractionManager {
 
         }
 
-        console.log(this.hoveredObject?.id);
-
     }
 
 }
