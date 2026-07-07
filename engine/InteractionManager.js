@@ -14,6 +14,10 @@ export default class InteractionManager {
 
     update() {
 
+        this.hoveredObject = null;
+
+        const input = this.engine.inputManager;
+
         for (const object of this.engine.scene.objects) {
 
             const canvas = this.engine.canvas;
@@ -30,15 +34,20 @@ export default class InteractionManager {
             const top = centerY - height / 2;
             const bottom = centerY + height / 2;
 
-            console.log({
-                id: object.id,
-                left,
-                right,
-                top,
-                bottom
-            });
+            if (
+                input.pointerX >= left &&
+                input.pointerX <= right &&
+                input.pointerY >= top &&
+                input.pointerY <= bottom
+            ) {
+
+                this.hoveredObject = object;
+
+            }
 
         }
+
+        console.log(this.hoveredObject?.id);
 
     }
 
