@@ -16,6 +16,7 @@ export default class Engine {
         this.scene = null;
         this.background = new Image();
         this.flashlight = new Flashlight(this);
+        this.inputManager = new InputManager(this);
         
     }
 
@@ -28,6 +29,8 @@ export default class Engine {
 
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
+
+        this.inputManager.init();
 
         this.scene = await this.sceneLoader.load("data/scenes/scene01.json");
 
