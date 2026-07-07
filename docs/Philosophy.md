@@ -22,6 +22,54 @@ Le moteur fournit uniquement les outils nécessaires à leur mise en scène.
 
 ---
 
+# Philosophie du SCL Exploration Engine
+
+## Le moteur ne connaît jamais le scénario.
+
+Le moteur ne contient aucune logique propre à une enquête.
+Toutes les règles sont décrites par les données (JSON).
+
+---
+
+## Le moteur ne connaît jamais la plateforme.
+
+Le moteur fonctionne indépendamment de Wix.
+Il peut être intégré à n'importe quelle plateforme capable de lui fournir une scène et de recevoir son résultat.
+
+---
+
+## Une instance = une scène.
+
+Une instance du moteur gère une seule scène d'exploration.
+
+Elle est responsable de l'ensemble des interactions locales de cette scène :
+
+- affichage ;
+- objets ;
+- popups ;
+- états locaux ;
+- inventaire temporaire ;
+- énigmes locales.
+
+Le moteur ne change jamais lui-même de scène.
+
+---
+
+## La plateforme orchestre la mission.
+
+La plateforme (Wix aujourd'hui) est responsable :
+
+- des utilisateurs ;
+- des équipes ;
+- des sauvegardes ;
+- de la progression globale ;
+- des récompenses ;
+- du lancement des scènes.
+
+Le moteur lui renvoie simplement le résultat de la scène.
+
+---
+
 # Simplicité avant sophistication.
 
 Une solution simple, robuste et maintenable est toujours préférée à une solution spectaculaire mais complexe.
