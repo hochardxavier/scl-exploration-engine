@@ -15,17 +15,7 @@ export default class Flashlight {
     init() {
 
         const canvas = this.engine.canvas;
-
-        canvas.style.touchAction = "none";
-
-        canvas.addEventListener("pointermove", (event) => {
-
-            this.updatePosition(
-                event.clientX,
-                event.clientY
-            );
-
-        }); //ici
+        
      }
 
     updatePosition(clientX, clientY) {
@@ -39,6 +29,11 @@ export default class Flashlight {
 
     update() {
 
+        const input = this.engine.inputManager;
+
+        this.x = input.pointerX;
+        this.y = input.pointerY;
+    
     }
 
     render() {
