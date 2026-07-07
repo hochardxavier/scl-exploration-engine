@@ -24,5 +24,8 @@ export default class InputManager {
 
     }
 
+    update() {
+
+    }
 
 }
