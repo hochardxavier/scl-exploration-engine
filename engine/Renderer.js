@@ -50,16 +50,14 @@ export default class Renderer {
             const x = canvas.width * object.x / 100 - width / 2;
             const y = canvas.height * object.y / 100 - height / 2;
 
-            /*
-            ctx.strokeStyle = "red";
-            ctx.strokeRect(
-            x,
-            y,
-            object.texture.width,
-            object.texture.height
-            );
-            */
-            
+            //objet survolé → +30 % de luminosité.
+            if (object === this.engine.interactionManager.hoveredObject) {
+
+                ctx.filter = "brightness(130%)";
+
+            }
+
+            // dessiner l'objet
             ctx.drawImage(
                 object.texture,
                 x,
@@ -68,11 +66,8 @@ export default class Renderer {
                 height
             );
 
-            /*console.log(
-                "canvas :", canvas.width, canvas.height,
-                "| objet :", object.x, object.y,
-                "| pixels :", x, y
-            );*/
+            // objet normal → aucun filtre
+            ctx.filter = "none";
 
         }
 
