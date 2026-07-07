@@ -25,14 +25,14 @@ export default class InputManager {
         canvas.addEventListener("pointerdown", () => {
 
             this.pointerPressed = true;
-            console.log(this.pointerPressed);
+            //console.log(this.pointerPressed);
 
         });
 
         canvas.addEventListener("pointerup", () => {
 
             this.pointerPressed = false;
-            console.log(this.pointerPressed);
+            //console.log(this.pointerPressed);
 
         });
 
