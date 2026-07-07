@@ -18,15 +18,6 @@ export default class Flashlight {
         
      }
 
-    updatePosition(clientX, clientY) {
-
-        const rect = this.engine.canvas.getBoundingClientRect();
-
-        this.x = clientX - rect.left;
-        this.y = clientY - rect.top;
-
-    }
-
     update() {
 
         const input = this.engine.inputManager;
