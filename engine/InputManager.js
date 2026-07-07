@@ -11,6 +11,20 @@ export default class InputManager {
 
     init() {
 
+        const canvas = this.engine.canvas;
+
+        canvas.style.touchAction = "none";
+
+        canvas.addEventListener("pointermove", (event) => {
+
+            this.pointerX = event.clientX;
+            this.pointerY = event.clientY;
+
+            console.log(this.pointerX, this.pointerY);
+
+        });
+
     }
+
 
 }
