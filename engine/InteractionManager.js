@@ -55,9 +55,10 @@ export default class InteractionManager {
             this.hoveredObject
             ) {
                 this.clickedObject = this.hoveredObject;
+                console.log(this.clickedObject.actions);
         } //fin du conditionnel IF
 
-        console.log(this.clickedObject?.id);
+        
 
     }
 
