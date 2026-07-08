@@ -49,4 +49,10 @@ export default class InputManager {
 
     }
 
+    endFrame() {
+
+        this.pointerJustPressed = false;
+        
+    }
+
 }
