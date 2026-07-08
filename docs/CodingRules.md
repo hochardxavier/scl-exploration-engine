@@ -71,3 +71,19 @@ Toutes les coordonnées représentent le centre de l'élément.
 Cette convention s'applique aux objets, aux interfaces et à tout élément graphique du moteur.
 
 Aucune coordonnée ne représente le coin supérieur gauche.
+
+## Cycle d'une frame
+
+Chaque frame suit toujours le même ordre :
+
+update()
+
+↓
+
+render()
+
+↓
+
+endFrame()
+
+Les informations temporaires (événements de clic, etc.) sont réinitialisées dans endFrame().
