@@ -1,13 +1,19 @@
-constructor(engine){
+export default class ActionManager {
 
-}
+    constructor(engine) {
 
-init() {
+        this.engine = engine;
 
+    }
 
-}
+    init() {
 
-update() {
+    }
 
+    getActions(object) {
+
+      return object.actions;
+
+    }
 
 }
