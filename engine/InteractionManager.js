@@ -48,7 +48,7 @@ export default class InteractionManager {
 
         } //fin de la boucle FOR
 
-        const input = this.engine.inputManager;
+        //const input = this.engine.inputManager;
 
         if (
             input.pointerJustPressed &&
