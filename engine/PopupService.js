@@ -12,4 +12,10 @@ export default class PopupService {
 
     }
 
+    show(target) {
+
+        console.log("Popup :", target);
+
+    }
+
 }
