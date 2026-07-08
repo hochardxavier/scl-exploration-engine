@@ -3,8 +3,8 @@ export default class InteractionManager {
     constructor(engine) {
 
         this.engine = engine;
-
         this.hoveredObject = null;
+        this.clickedObject = null;
 
     }
 
@@ -15,6 +15,7 @@ export default class InteractionManager {
     update() {
 
         this.hoveredObject = null;
+        this.clickedObject = null;
 
         const input = this.engine.inputManager;
 
