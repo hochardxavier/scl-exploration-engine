@@ -18,9 +18,14 @@ app.js
 │
 ▼
 Engine
+│
 ├── SceneLoader
 ├── Renderer
-└── Flashlight
+├── Flashlight
+├── InputManager
+├── InteractionManager
+├── PopupManager (à venir)
+└── InventoryManager (à venir)
 
 
 ### Engine
