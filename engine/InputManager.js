@@ -7,6 +7,8 @@ export default class InputManager {
         this.pointerX = 0;
         this.pointerY = 0;
 
+        this.previousPointerPressed = false;
+
     }
 
     init() {
@@ -39,6 +41,8 @@ export default class InputManager {
     }
 
     update() {
+
+        this.previousPointerPressed = this.pointerPressed;
 
     }
 
