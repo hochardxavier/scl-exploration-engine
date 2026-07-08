@@ -60,7 +60,7 @@ export default class InteractionManager {
                     this.clickedObject
                 );
 
-                console.log(actions);
+                //console.log(actions);
         } //fin du conditionnel IF
 
         
