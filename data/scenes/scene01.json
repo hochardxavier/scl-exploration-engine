@@ -22,7 +22,8 @@
             "actions":[
                 {
                     "type": "popup",
-                    "target": "paper01"
+                    "target": "paper01",
+                    "text": "4268 est inscrit sur le papier."
                 }
             ]
         }
