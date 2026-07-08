@@ -19,7 +19,7 @@ export default class ActionManager {
     handleActions(actions) {
 
         for (const action of actions) {
-
+            console.log(actions);
         }
 
     }
