@@ -55,8 +55,8 @@ export default class Engine {
 
     tick() {
         this.update();
-
         this.render();
+        this.inputManager.endFrame();
 
         requestAnimationFrame(() => this.tick());
     }
