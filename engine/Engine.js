@@ -3,6 +3,7 @@ import Flashlight from "./Flashlight.js";
 import Renderer from "./Renderer.js";
 import InputManager from "./InputManager.js";
 import InteractionManager from "./InteractionManager.js";
+import ActionManager from "./ActionManager.js";
 
 export default class Engine {
 
@@ -20,12 +21,13 @@ export default class Engine {
         this.flashlight = new Flashlight(this);
         this.inputManager = new InputManager(this);
         this.interactionManager = new InteractionManager(this);
+        this.actionManager = new ActionManager(this);
         
     }
 
     async init() {
 
-        console.log("SCL Exploration Engine v0.1.0-alpha5 --- D0");
+        console.log("SCL Exploration Engine v0.1.0-alpha6 --- D0");
 
         this.canvas = document.getElementById("gameCanvas");
         this.ctx = this.canvas.getContext("2d");
@@ -35,6 +37,8 @@ export default class Engine {
 
         this.inputManager.init();
         this.interactionManager.init();
+
+        this.actionManager.init();
 
         this.scene = await this.sceneLoader.load("data/scenes/scene01.json");
 
