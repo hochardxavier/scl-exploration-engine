@@ -20,7 +20,13 @@ export default class ActionManager {
 
         for (const action of actions) {
 
-            console.log(action);
+            switch (action.type) {
+
+                case "popup": 
+                    this.engine.popupService.show(action.target);
+                    break;
+
+            }
             
         }
 
