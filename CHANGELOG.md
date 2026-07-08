@@ -2,6 +2,21 @@
 
 Toutes les évolutions importantes du SCL Exploration Engine sont documentées dans ce fichier.
 ---
+## v0.1.0-alpha6 (08/07/2026)
+
+✔ Création de l'InputManager
+
+✔ La Flashlight utilise désormais l'InputManager
+
+✔ Création de l'InteractionManager
+
+✔ Détection du survol des objets
+
+✔ Première surbrillance des objets interactifs
+
+✔ Détection du clic sur un objet
+
+---
 ## v0.1.0-alpha5 (06/07/2026)
 
 ### Nouveautés
