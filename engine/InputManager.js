@@ -7,7 +7,8 @@ export default class InputManager {
         this.pointerX = 0;
         this.pointerY = 0;
 
-        this.previousPointerPressed = false;
+        this.pointerPressed = false;
+        this.pointerJustPressed = false;
 
     }
 
@@ -27,13 +28,15 @@ export default class InputManager {
         canvas.addEventListener("pointerdown", () => {
 
             this.pointerPressed = true;
-            //console.log(this.pointerPressed);
+            this.pointerJustPressed = true;
+            //console.log(this.pointerJustPressed);
 
         });
 
         canvas.addEventListener("pointerup", () => {
 
             this.pointerPressed = false;
+            
             //console.log(this.pointerPressed);
 
         });
@@ -42,7 +45,7 @@ export default class InputManager {
 
     update() {
 
-        this.previousPointerPressed = this.pointerPressed;
+        
 
     }
 
