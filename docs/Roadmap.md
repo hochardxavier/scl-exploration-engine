@@ -55,3 +55,42 @@ Le moteur doit permettre de créer une nouvelle enquête principalement en ajout
 - des ressources audio ;
 
 sans modifier le moteur lui-même.
+
+---
+
+# Roadmap
+
+## v0.1.0
+
+### ✔ Sprint 1
+- Architecture
+
+### ✔ Sprint 2
+- Documentation
+
+### ✔ Sprint 3
+- Boucle de rendu
+
+### ✔ Sprint 4
+- Chargement des scènes
+
+### ✔ Sprint 5
+- Fond dynamique
+
+### ✔ Sprint 6
+- Éclairage dynamique
+
+### ✔ Sprint 7
+- Gestion des sprites
+
+### ✔ Sprint 8
+- Support tactile
+
+### ✔ Sprint 9
+- Affichage des objets
+
+### ✔ Sprint 10
+- InputManager
+- InteractionManager
+- Détection du survol
+- Détection du clic
