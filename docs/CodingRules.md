@@ -87,3 +87,23 @@ render()
 endFrame()
 
 Les informations temporaires (événements de clic, etc.) sont réinitialisées dans endFrame().
+
+---
+
+## Encapsulation
+
+Les composants du moteur ne lisent jamais directement les données internes d'un autre composant.
+
+Ils utilisent toujours une méthode dédiée.
+
+✔ actionManager.getActions(object)
+
+✔ inventoryManager.hasItem(id)
+
+✔ interactionManager.getClickedObject()
+
+✘ object.actions
+
+✘ inventory.items
+
+✘ interactionManager.clickedObject
