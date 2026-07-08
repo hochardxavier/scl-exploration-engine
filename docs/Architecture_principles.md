@@ -3,6 +3,8 @@
 L'architecture du moteur repose sur une séparation stricte des responsabilités.
 Chaque composant appartient à une catégorie bien définie.
 
+## Les noms des composants doivent refléter leur responsabilité réelle, et non une convention de développement.
+
 ---
 
 # Engine
