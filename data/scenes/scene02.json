@@ -1,0 +1,31 @@
+{
+    "id": "scene01",
+    
+    "name": "seconde scène",
+    
+    "background": "assets/scenes/cave001.png",
+    
+    "objects": [
+        {
+            "id": "paper01",
+            
+            "image": "assets/sprites/paper01.png",
+            
+            "x": 50,
+            "y": 50,
+            
+            "width": 5,
+            "height": 5,
+            
+            "visible": true,
+            
+            "actions":[
+                {
+                    "type": "popup",
+                    "title": "Document froissé",
+                    "text": "4268 est inscrit sur le papier."
+                }
+            ]
+        }
+    ]
+}
