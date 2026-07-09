@@ -13,10 +13,15 @@ Chaque fonctionnalité ajoutée doit être immédiatement exploitable dans une e
 - ✔ Chargement des scènes JSON
 - ✔ Moteur de rendu
 - ✔ Lampe torche
-- ☐ Objets interactifs
-- ☐ InteractionManager
-- ☐ PopupManager
-- ☐ Inventaire
+- ✔ Objets interactifs
+- ✔ InputManager
+- ✔ InteractionManager
+- ✔ ActionManager
+- ✔ PopupService
+- ☐ InputPopupService
+- ☐ ObjectService
+- ☐ Communication avec Wix
+- ☐ MiniGameService
 - ☐ États des objets
 
 ---
@@ -25,12 +30,12 @@ Chaque fonctionnalité ajoutée doit être immédiatement exploitable dans une e
 
 ## Immersion
 
+- Paramètres d'éclairage par scène
 - Sons d'ambiance
 - Effets sonores
 - Animations
-- Transitions entre scènes
-- Sauvegarde de progression
-- Déclencheurs d'événements
+- Transitions
+- Conditions d'interaction
 
 ---
 
@@ -43,6 +48,7 @@ Chaque fonctionnalité ajoutée doit être immédiatement exploitable dans une e
 - Prévisualisation en temps réel
 - Générateur de missions
 - Système de plugins
+- Documentation du format de scène
 
 ---
 
@@ -94,3 +100,11 @@ sans modifier le moteur lui-même.
 - InteractionManager
 - Détection du survol
 - Détection du clic
+
+### ✔ Sprint 11
+
+- ActionManager
+- Architecture Manager / Service
+- PopupService
+- Premier système d'actions
+- Première popup interactive
