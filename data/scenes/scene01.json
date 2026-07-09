@@ -22,7 +22,7 @@
             "actions":[
                 {
                     "type": "popup",
-                    "target": "paper01",
+                    "title": "Document froissé",
                     "text": "4268 est inscrit sur le papier."
                 }
             ]
