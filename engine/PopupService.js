@@ -35,9 +35,16 @@ export default class PopupService {
         const button = document.createElement("button");
         button.textContent = "Fermer";
 
+        if (data.image) {
+            const image = document.createElement("img");
+            image.src = data.image;
+            popup.appendChild(image);
+        }
+        
         popup.appendChild(title);
         popup.appendChild(text);
         popup.appendChild(button);
+        
 
         overlay.appendChild(popup);
         
