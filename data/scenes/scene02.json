@@ -7,9 +7,9 @@
     
     "objects": [
         {
-            "id": "paper01",
+            "id": "keybox01",
             
-            "image": "assets/sprites/paper01.png",
+            "image": "assets/sprites/keybox01.png",
             
             "x": 50,
             "y": 50,
