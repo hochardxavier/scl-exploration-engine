@@ -14,7 +14,9 @@ export default class PopupService {
 
     show(data) {
 
-        console.log("Popup :", data);
+        const popup = document.createElement("div");
+
+        document.body.appendChild(popup);
 
     }
 
