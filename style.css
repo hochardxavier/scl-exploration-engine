@@ -16,3 +16,49 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+/* Popup Service */
+
+.popup-overlay {
+
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    z-index: 9999;
+
+}
+
+.popup {
+
+    width: 500px;
+    max-width: 90vw;
+
+    background: white;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+}
+
+.popup h2 {
+
+    margin-top: 0;
+
+}
+
+.popup button {
+
+    margin-top: 20px;
+
+}
+
+/* fin du popup service */
