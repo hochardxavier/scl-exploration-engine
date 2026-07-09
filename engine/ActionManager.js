@@ -16,7 +16,9 @@ export default class ActionManager {
 
     }
 
-    handleActions(actions) {
+    handleActions(object) {
+
+        const actions = this.getActions(object);
 
         for (const action of actions) {
 
