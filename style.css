@@ -19,7 +19,7 @@ body {
 
 /* Popup Service */
 
-.popup-overlay {
+.scl-popup-overlay {
 
     position: fixed;
     inset: 0;
@@ -34,7 +34,7 @@ body {
 
 }
 
-.popup {
+.scl-popup {
 
     width: 500px;
     max-width: 90vw;
@@ -49,13 +49,13 @@ body {
 
 }
 
-.popup h2 {
+.scl-popup h2 {
 
     margin-top: 0;
 
 }
 
-.popup button {
+.scl-popup button {
 
     margin-top: 20px;
 
