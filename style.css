@@ -61,4 +61,14 @@ body {
 
 }
 
+.scl-popup img {
+
+    display: block;
+
+    margin: 0 auto 20px auto;
+
+    max-width: 100%;
+
+}
+
 /* fin du popup service */
