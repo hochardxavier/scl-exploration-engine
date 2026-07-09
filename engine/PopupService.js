@@ -12,9 +12,9 @@ export default class PopupService {
 
     }
 
-    show(target) {
+    show(data) {
 
-        console.log("Popup :", target);
+        console.log("Popup :", data);
 
     }
 
