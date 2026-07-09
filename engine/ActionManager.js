@@ -27,7 +27,8 @@ export default class ActionManager {
                 case "popup": 
                     this.engine.popupService.show({
                                                     title: action.title,
-                                                    text: action.text
+                                                    text: action.text,
+                                                    image: object.image
                                                   });
                     break;
 
