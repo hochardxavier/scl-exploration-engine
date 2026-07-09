@@ -3,7 +3,7 @@
 Toutes les évolutions importantes du SCL Exploration Engine sont documentées dans ce fichier.
 ---
 
-v0.1.0-alpha7 (09/07/2026)
+## v0.1.0-alpha7 (09/07/2026)
 
 ✔ Création de l'ActionManager
 
