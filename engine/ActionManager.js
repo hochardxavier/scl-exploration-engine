@@ -25,7 +25,10 @@ export default class ActionManager {
             switch (action.type) {
 
                 case "popup": 
-                    this.engine.popupService.show(action.target);
+                    this.engine.popupService.show({
+                                                    title: action.title,
+                                                    text: action.text
+                                                  });
                     break;
 
             }
