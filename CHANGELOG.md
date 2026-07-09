@@ -2,6 +2,25 @@
 
 Toutes les évolutions importantes du SCL Exploration Engine sont documentées dans ce fichier.
 ---
+
+v0.1.0-alpha7 (09/07/2026)
+
+✔ Création de l'ActionManager
+
+✔ Mise en place de l'architecture Manager / Service
+
+✔ Création du PopupService
+
+✔ Premier système d'actions piloté par le JSON
+
+✔ Première popup interactive (titre, texte, illustration)
+
+✔ Gestion d'une popup unique via currentPopup
+
+✔ Séparation du JavaScript et du CSS pour les interfaces HTML
+
+---
+
 ## v0.1.0-alpha6 (08/07/2026)
 
 ✔ Création de l'InputManager
