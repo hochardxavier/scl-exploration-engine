@@ -6,6 +6,8 @@ export default class PopupService {
 
         this.engine = engine;
 
+        this.currentPopup = null;
+
     }
 
     init() {
@@ -14,15 +16,15 @@ export default class PopupService {
 
     show(data) {
 
-        const popup = document.createElement("div");
+        if (this.currentPopup !== null) {
+            return;
+        }
+        
+        const overlay = document.createElement("div");
+        overlay.className = "scl-popup-overlay";
 
-        popup.style.position = "fixed";
-        popup.style.top = "20px";
-        popup.style.left = "20px";
-        popup.style.background = "white";
-        popup.style.border = "2px solid black";
-        popup.style.padding = "20px";
-        popup.style.zIndex = "9999";
+        const popup = document.createElement("div");
+        popup.className = "scl-popup";
 
         const title = document.createElement("h2");
         title.textContent = data.title;
@@ -36,11 +38,16 @@ export default class PopupService {
         popup.appendChild(title);
         popup.appendChild(text);
         popup.appendChild(button);
+
+        overlay.appendChild(popup);
         
-        document.body.appendChild(popup);
+        document.body.appendChild(overlay);
+
+        this.currentPopup = overlay;
 
         button.addEventListener("click", () => {
-            popup.remove();
+            overlay.remove();
+            this.currentPopup = null;
         });
 
     }
