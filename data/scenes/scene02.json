@@ -31,7 +31,7 @@
                             "button": "Valider"
                 },
 
-                "check": {
+                "condition": {
                             "type": "equals",
                             "value": "4268"
                 },
