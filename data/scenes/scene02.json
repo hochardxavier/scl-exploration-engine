@@ -21,9 +21,41 @@
             
             "actions":[
                 {
-                    "type": "popup",
-                    "title": "Document froissé",
-                    "text": "4268 est inscrit sur le papier."
+                "type": "condition",
+                
+                "input": {
+                            "type": "popup",
+                            "title": "Boîte à clé",
+                            "text": "Entrez le code.",
+                            "placeholder": "Code",
+                            "button": "Valider"
+                },
+
+                "check": {
+                            "type": "equals",
+                            "value": "4268"
+                },
+
+                "onSuccess": [
+                    {
+                      "type": "popup",
+                      "title": "Succès",
+                      "text": "Vous trouvez une petite clé."
+                    },
+                    {
+                      "type": "returnToWix",
+                      "result": "keyFound"
+                    }
+                ],
+
+                "onFailure": [
+                    {
+                      "type": "popup",
+                      "title": "Échec",
+                      "text": "Le code est incorrect."
+                    }
+                  ]
+                }
                 }
             ]
         }
