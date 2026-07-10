@@ -43,7 +43,7 @@ export default class Engine {
         this.actionManager.init();
         this.popupService.init();
 
-        this.scene = await this.sceneLoader.load("data/scenes/scene01.json");
+        this.scene = await this.sceneLoader.load("data/scenes/scene02.json");
 
         this.background.src = this.scene.background;
 
