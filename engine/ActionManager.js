@@ -32,11 +32,19 @@ export default class ActionManager {
                                                   });
                     break;
 
+                case "condition":
+                    this.handleCondition(action);
+                    break;
+
             }
             
-        }
+        } 
 
-        
+    }
+
+    handleCondition(action) {
+
+        console.log(action);
 
     }
 
