@@ -40,7 +40,8 @@
                     {
                       "type": "popup",
                       "title": "Succès",
-                      "text": "Vous trouvez une petite clé."
+                      "text": "Vous trouvez une petite clé.",
+                        "image": "assets/sprites/key01.png"
                     },
                     {
                       "type": "returnToWix",
