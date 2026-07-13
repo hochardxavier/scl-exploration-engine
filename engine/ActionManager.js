@@ -33,7 +33,7 @@ export default class ActionManager {
                     break;
 
                 case "condition":
-                    this.handleCondition(action);
+                    this.handleCondition(action, object);
                     break;
 
             }
