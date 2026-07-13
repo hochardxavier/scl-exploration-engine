@@ -42,13 +42,22 @@ export default class InputPopupService {
         overlay.appendChild(popup);
         
         document.body.appendChild(overlay);
-
+        input.focus();
+        
         this.currentPopup = overlay;
 
-        button.addEventListener("click", () => {
+        const validate = () => {
             callback(input.value);
             overlay.remove();
             this.currentPopup = null;
+        };
+
+        button.addEventListener("click", validate);
+
+        input.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                validate();
+            }
         });
 
     }
