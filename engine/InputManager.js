@@ -29,7 +29,7 @@ export default class InputManager {
 
             this.pointerPressed = true;
             this.pointerJustPressed = true;
-            console.log(this.pointerJustPressed);
+            //console.log(this.pointerJustPressed);
 
         });
 
