@@ -56,9 +56,16 @@ export default class InteractionManager {
             ) {
                 this.clickedObject = this.hoveredObject;
 
-                this.engine.actionManager.handleActions(
-                    this.clickedObject
-                );
+                const actions = this.engine.actionManager.getActions(this.clickedObject);
+
+                    this.engine.actionManager.handleActions(
+                        actions,
+                        this.clickedObject
+                    );
+
+                //this.engine.actionManager.handleActions(
+                //    this.clickedObject
+                //);
 
                 //console.log(actions);
         } //fin du conditionnel IF
