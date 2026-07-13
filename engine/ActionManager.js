@@ -16,9 +16,9 @@ export default class ActionManager {
 
     }
 
-    handleActions(object) {
+    handleActions(actions, object = null) {
 
-        const actions = this.getActions(object);
+        //const actions = this.getActions(object);
 
         for (const action of actions) {
 
@@ -42,7 +42,7 @@ export default class ActionManager {
 
     }
 
-    handleCondition(action) {
+    handleCondition(action, object) {
 
         this.engine.inputPopupService.show(
 
