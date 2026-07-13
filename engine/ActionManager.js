@@ -52,11 +52,11 @@ export default class ActionManager {
 
                 if (value === action.condition.value) {
 
-                    this.handleActions(action.onSuccess);
+                    this.handleActions(action.onSuccess, object);
 
                 } else {
 
-                    this.handleActions(action.onFailure);
+                    this.handleActions(action.onFailure, object);
 
                 }
 
