@@ -50,7 +50,7 @@ export default class ActionManager {
 
             (value) => {
 
-                console.log(value);
+                console.log("Valeur reçue:",value);
 
             }
 
