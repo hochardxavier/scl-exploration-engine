@@ -5,6 +5,7 @@ import InputManager from "./InputManager.js";
 import InteractionManager from "./InteractionManager.js";
 import ActionManager from "./ActionManager.js";
 import PopupService from "./PopupService.js";
+import InputPopupService from "./InputPopupService.js";
 
 export default class Engine {
 
@@ -24,6 +25,7 @@ export default class Engine {
         this.interactionManager = new InteractionManager(this);
         this.actionManager = new ActionManager(this);
         this.popupService = new PopupService(this);
+        this.inputPopupService = new InputPopupService(this);
         
     }
 
@@ -42,6 +44,7 @@ export default class Engine {
 
         this.actionManager.init();
         this.popupService.init();
+        this.inputPopupService.init();
 
         this.scene = await this.sceneLoader.load("data/scenes/scene02.json");
 
