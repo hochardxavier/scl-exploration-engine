@@ -12,21 +12,11 @@ export default class InputPopupService {
 
     show(inputData, callback) {
 
-        //console.log(inputData);
+        console.log(inputData);
 
-        //callback("4268");
+        callback("4268");
 
-        this.engine.inputPopupService.show(
-
-            action.input,
-
-            (value) => {
-
-                console.log("Valeur reçue :", value);
-
-            }
-
-        ); 
+         
 
     }
 
