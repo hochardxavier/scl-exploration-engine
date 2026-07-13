@@ -28,7 +28,7 @@ export default class ActionManager {
                     this.engine.popupService.show({
                                                     title: action.title,
                                                     text: action.text,
-                                                    image: action.image || object.image
+                                                    image: action.image || object?.image
                                                   });
                     break;
 
