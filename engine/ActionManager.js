@@ -50,7 +50,15 @@ export default class ActionManager {
 
             (value) => {
 
-                console.log("Valeur reçue:",value);
+                if (value === action.condition.value) {
+
+                    this.handleActions(action.onSuccess);
+
+                } else {
+
+                    this.handleActions(action.onFailure);
+
+                }
 
             }
 
