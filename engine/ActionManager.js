@@ -44,7 +44,17 @@ export default class ActionManager {
 
     handleCondition(action) {
 
-        console.log(action);
+        this.engine.inputPopupService.show(
+
+            action.input,
+
+            (value) => {
+
+                console.log(value);
+
+            }
+
+        );
 
     }
 
