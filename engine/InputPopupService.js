@@ -24,22 +24,19 @@ export default class InputPopupService {
         popup.className = "scl-popup";
 
         const title = document.createElement("h2");
-
         const text = document.createElement("p");
-
         const input = document.createElement("input");
-
+        input.type = "text";
         const button = document.createElement("button");
 
-        if (data.image) {
-            const image = document.createElement("img");
-            image.src = data.image;
-            popup.appendChild(image);
-        }
+        title.textContent = inputData.title;
+        text.textContent = inputData.text;
+        input.placeholder = inputData.placeholder;
+        button.textContent = inputData.button;
 
         popup.appendChild(title);
         popup.appendChild(text);
-        popup.appenChild(input);
+        popup.appendChild(input);
         popup.appendChild(button);
 
         overlay.appendChild(popup);
