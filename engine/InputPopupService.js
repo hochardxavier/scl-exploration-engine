@@ -34,6 +34,12 @@ export default class InputPopupService {
         input.placeholder = inputData.placeholder;
         button.textContent = inputData.button;
 
+        if (data.image) {
+            const image = document.createElement("img");
+            image.src = data.image;
+            popup.appendChild(image);
+        }
+
         popup.appendChild(title);
         popup.appendChild(text);
         popup.appendChild(input);
