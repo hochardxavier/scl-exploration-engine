@@ -3,6 +3,7 @@ export default class InputPopupService {
     constructor(engine) {
 
         this.engine = engine;
+        this.currentPopup = null;
 
     }
 
