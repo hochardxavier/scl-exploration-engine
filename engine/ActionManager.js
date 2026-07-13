@@ -44,11 +44,16 @@ export default class ActionManager {
 
     handleCondition(action, object) {
 
-        this.engine.inputPopupService.show(
+        this.engine.inputPopupService.show({
 
-            action.input,
+            title: action.input.title,
+            text: action.input.text,
+            placeholder: action.input.placeholder,
+            button: action.input.button,
 
-            (value) => {
+            image: object?.image
+
+        },(value) => {
 
                 if (value === action.condition.value) {
 
@@ -62,7 +67,7 @@ export default class ActionManager {
 
             }
 
-        );
+       );
 
     }
 
