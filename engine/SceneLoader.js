@@ -2,7 +2,10 @@ import Scene from "./Scene.js";
 
 export default class SceneLoader {
 
-    async load(path) {
+    async load(sceneId) {
+
+        const path =
+            `data/scenes/${sceneId}.json`;
 
         const response = await fetch(path);
 
