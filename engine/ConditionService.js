@@ -10,4 +10,18 @@ export default class ConditionService {
 
     }
 
+    check(condition, value) {
+
+        switch (condition.type) {
+
+            case "equals":
+
+                return value === condition.value;
+
+        }
+
+        return false;
+
+    }
+
 }
