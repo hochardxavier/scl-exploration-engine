@@ -2,6 +2,23 @@
 
 Toutes les évolutions importantes du SCL Exploration Engine sont documentées dans ce fichier.
 ---
+## v0.1.0-alpha8 (15/07/2026)
+
+✔ Création du système de conditions
+
+✔ Création de InputPopupService
+
+✔ Gestion des actions onSuccess / onFailure
+
+✔ Première interaction utilisateur avec saisie de texte
+
+✔ Affichage des objets dans InputPopupService
+
+✔ Focus automatique sur le champ de saisie
+
+✔ Validation par la touche Entrée
+
+✔ Refactorisation de ActionManager pour exécuter des listes d'actions
 
 ## v0.1.0-alpha7 (09/07/2026)
 
