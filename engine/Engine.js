@@ -65,11 +65,10 @@ export default class Engine {
 
     }
 
-    async loadScene(scenePath) {
+    async loadScene() {
 
-        // TODO Sprint 14
-        // Construire automatiquement le chemin
-        // à partir de sceneContext.sceneId
+        const scenePath =
+            `data/scenes/${this.sceneContext.sceneId}.json`;
 
         this.scene = await this.sceneLoader.load(scenePath);
         this.background.src = this.scene.background;
