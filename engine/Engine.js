@@ -59,9 +59,9 @@ export default class Engine {
 
         };*/
 
-        await this.loadScene("data/scenes/scene02.json");
+        //await this.loadScene("data/scenes/scene02.json");
 
-        this.start();
+        //this.start();
 
     }
 
