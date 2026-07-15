@@ -55,7 +55,7 @@ export default class ActionManager {
 
         },(value) => {
 
-                if (value === action.condition.value) {
+                if (this.engine.conditionService.check(action.condition, value)) {
 
                     this.handleActions(action.onSuccess, object);
 
