@@ -8,6 +8,7 @@ import PopupService from "./PopupService.js";
 import InputPopupService from "./InputPopupService.js";
 import SceneContext from "./SceneContext.js";
 import InventoryService from "./InventoryService.js";
+import ConditionService from "./ConditionService.js";
 
 export default class Engine {
 
@@ -30,6 +31,7 @@ export default class Engine {
         this.popupService = new PopupService(this);
         this.inputPopupService = new InputPopupService(this);
         this.inventoryService = new InventoryService(this);
+        this.conditionService = new ConditionService(this);
         
     }
 
@@ -51,6 +53,7 @@ export default class Engine {
         this.inputPopupService.init();
 
         this.inventoryService.init();
+        this.conditionService.init();
 
         //this.scene = await this.sceneLoader.load("data/scenes/scene02.json"); envoyé vers loadScene()
 
