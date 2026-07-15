@@ -48,16 +48,43 @@ export default class Engine {
         this.popupService.init();
         this.inputPopupService.init();
 
-        this.scene = await this.sceneLoader.load("data/scenes/scene02.json");
+        //this.scene = await this.sceneLoader.load("data/scenes/scene02.json"); envoyé vers loadScene()
 
-        this.background.src = this.scene.background;
+        //this.background.src = this.scene.background; envoyé vers loadScene()
 
-        this.background.onload = () => {
+        /*this.background.onload = () => {
 
             this.flashlight.init();
             this.start();
 
-        };
+        };*/
+
+        await this.loadScene("data/scenes/scene02.json");
+
+        this.start();
+
+    }
+
+    async loadScene(scenePath) {
+
+        // TODO Sprint 14
+        // Construire automatiquement le chemin
+        // à partir de sceneContext.sceneId
+
+        this.scene = await this.sceneLoader.load(scenePath);
+        this.background.src = this.scene.background;
+
+        await new Promise((resolve) => {
+
+            this.background.onload = () => {
+
+                this.flashlight.init();
+
+                resolve();
+
+            };
+
+        });
 
     }
     
@@ -84,6 +111,12 @@ export default class Engine {
     render() {
 
       this.renderer.render();  
+
+    }
+
+    loadContext(context) {
+
+        this.sceneContext.load(context);
 
     }
 
