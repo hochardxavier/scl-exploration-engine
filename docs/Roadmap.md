@@ -115,3 +115,9 @@ sans modifier le moteur lui-même.
 - InputPopupService
 - Validation utilisateur
 - Branches onSuccess / onFailure
+
+### Sprint 14
+
+- HostBridge
+- Contrat de communication
+- Contexte d'exécution
