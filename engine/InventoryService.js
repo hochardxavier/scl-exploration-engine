@@ -10,4 +10,34 @@ export default class InventoryService {
 
     }
 
+    add(item) {
+
+        this.engine.sceneContext.inventory.push(item);
+
+    }
+
+    has(item) {
+
+        return this.engine.sceneContext.inventory.includes(item);
+
+    }
+
+    remove(item) {
+
+        const index = this.engine.sceneContext.inventory.indexOf(item);
+
+        if (index !== -1) {
+
+            this.engine.sceneContext.inventory.splice(index, 1);
+
+        }
+
+    }
+
+    clear() {
+
+        this.engine.sceneContext.inventory = [];
+
+    }
+
 }
