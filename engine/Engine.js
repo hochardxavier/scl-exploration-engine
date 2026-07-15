@@ -6,6 +6,7 @@ import InteractionManager from "./InteractionManager.js";
 import ActionManager from "./ActionManager.js";
 import PopupService from "./PopupService.js";
 import InputPopupService from "./InputPopupService.js";
+import SceneContext from "./SceneContext.js";
 
 export default class Engine {
 
@@ -16,6 +17,7 @@ export default class Engine {
         this.canvas = null;
         this.ctx = null;
 
+        this.sceneContext = new SceneContext();
         this.renderer = new Renderer(this);
         this.sceneLoader = new SceneLoader();
         this.scene = null;
