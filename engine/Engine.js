@@ -7,6 +7,7 @@ import ActionManager from "./ActionManager.js";
 import PopupService from "./PopupService.js";
 import InputPopupService from "./InputPopupService.js";
 import SceneContext from "./SceneContext.js";
+import InventoryService from "./InventoryService.js";
 
 export default class Engine {
 
@@ -28,6 +29,7 @@ export default class Engine {
         this.actionManager = new ActionManager(this);
         this.popupService = new PopupService(this);
         this.inputPopupService = new InputPopupService(this);
+        this.inventoryService = new InventoryService(this);
         
     }
 
@@ -47,6 +49,8 @@ export default class Engine {
         this.actionManager.init();
         this.popupService.init();
         this.inputPopupService.init();
+
+        this.inventoryService.init();
 
         //this.scene = await this.sceneLoader.load("data/scenes/scene02.json"); envoyé vers loadScene()
 
