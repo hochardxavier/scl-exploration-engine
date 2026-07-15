@@ -67,10 +67,10 @@ export default class Engine {
 
     async loadScene() {
 
-        const scenePath =
-            `data/scenes/${this.sceneContext.sceneId}.json`;
+        //const scenePath =
+        //    `data/scenes/${this.sceneContext.sceneId}.json`;
 
-        this.scene = await this.sceneLoader.load(scenePath);
+        this.scene = await this.sceneLoader.load(this.sceneContext.sceneId);
         this.background.src = this.scene.background;
 
         await new Promise((resolve) => {
