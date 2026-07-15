@@ -108,3 +108,10 @@ sans modifier le moteur lui-même.
 - PopupService
 - Premier système d'actions
 - Première popup interactive
+
+### ✔ Sprint 13
+
+- Action "condition"
+- InputPopupService
+- Validation utilisateur
+- Branches onSuccess / onFailure
