@@ -111,3 +111,40 @@ Une nouvelle fonctionnalité est développée en quatre étapes.
 Aucune étape n'est fusionnée avec une autre.
 
 Cette progression garantit un moteur simple à tester et à maintenir.
+
+---
+
+# Managers
+
+Les managers reçoivent les informations, prennent les décisions
+et répartissent le travail entre les services.
+
+Ils sont les seuls responsables de la logique métier.
+
+---
+
+# Services
+
+Les services sont les périphériques du moteur.
+
+Ils exécutent une tâche ou collectent une information,
+mais ne prennent jamais de décision métier.
+
+Ils rendent toujours compte à leur manager.
+
+---
+
+# Contexte d'exécution
+
+Le moteur ne connaît jamais la plateforme qui l'héberge.
+
+Il reçoit un contexte d'exécution fourni par un appelant
+(host).
+
+Ce contexte contient notamment :
+
+- hostId
+- sessionId
+- sceneId
+- inventaire initial
+- paramètres de la scène
