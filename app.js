@@ -18,6 +18,6 @@ engine.loadContext({
 
 });
 
-await engine.loadScene("data/scenes/scene02.json");
+await engine.loadScene();
 engine.start();
 
