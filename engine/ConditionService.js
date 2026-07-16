@@ -57,7 +57,21 @@ export default class ConditionService {
 
                 break;
 
-            }
+            case "inventory":
+
+                callback(
+
+                    this.engine.inventoryService.has(
+
+                        action.condition.item
+
+                    )
+
+                );
+
+                break;
+
+        }
 
     }
 
