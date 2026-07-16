@@ -46,6 +46,10 @@
                     {
                       "type": "returnToWix",
                       "result": "keyFound"
+                    },
+                    {
+                        "type": "inventoryAdd",
+                        "item": "key"
                     }
                 ],
 
