@@ -33,7 +33,21 @@ export default class ActionManager {
                     break;
 
                 case "condition":
-                    this.handleCondition(action, object);
+
+                    this.engine.conditionService.execute(
+
+                        action,
+                        object,
+                        (success) => {
+                            if (success) {
+                                this.handleActions(action.onSuccess, object);
+                            } else {
+                                this.handleActions(action.onFailure, object);
+                            }
+                        }
+
+                    );
+
                     break;
 
                 case "inventoryAdd":
@@ -46,33 +60,5 @@ export default class ActionManager {
 
     }
 
-    handleCondition(action, object) {
-
-        this.engine.inputPopupService.show({
-
-            title: action.input.title,
-            text: action.input.text,
-            placeholder: action.input.placeholder,
-            button: action.input.button,
-
-            image: object?.image
-
-        },(value) => {
-
-                if (this.engine.conditionService.check(action.condition, value)) {
-
-                    this.handleActions(action.onSuccess, object);
-
-                } else {
-
-                    this.handleActions(action.onFailure, object);
-
-                }
-
-            }
-
-       );
-
-    }
 
 }
