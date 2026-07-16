@@ -16,7 +16,7 @@ export default class Engine {
 
     constructor() {
 
-        // canvas
+        // Canvas
         this.canvas = null;
         this.ctx = null;
 
@@ -53,36 +53,32 @@ export default class Engine {
 
         console.log("SCL Exploration Engine v0.1.0-alpha6 --- D0");
 
+        // Canvas
         this.canvas = document.getElementById("gameCanvas");
         this.ctx = this.canvas.getContext("2d");
 
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
 
+        //
+        Entrées
         this.inputManager.init();
         this.interactionManager.init();
 
+        // Logique
         this.actionManager.init();
+
+        // Services
         this.popupService.init();
         this.inputPopupService.init();
-
         this.inventoryService.init();
         this.conditionService.init();
 
-        //this.scene = await this.sceneLoader.load("data/scenes/scene02.json"); envoyé vers loadScene()
+    }
 
-        //this.background.src = this.scene.background; envoyé vers loadScene()
+    loadContext(context) {
 
-        /*this.background.onload = () => {
-
-            this.flashlight.init();
-            this.start();
-
-        };*/
-
-        //await this.loadScene("data/scenes/scene02.json");
-
-        //this.start();
+        this.sceneContext.load(context);
 
     }
 
@@ -131,12 +127,6 @@ export default class Engine {
     render() {
 
       this.renderer.render();  
-
-    }
-
-    loadContext(context) {
-
-        this.sceneContext.load(context);
 
     }
 
