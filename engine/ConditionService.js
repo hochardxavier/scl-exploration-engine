@@ -55,8 +55,10 @@ export default class ConditionService {
 
                );
 
-            break;
+                break;
 
-        }
+            }
+
+    }
 
 }
