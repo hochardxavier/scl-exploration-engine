@@ -16,18 +16,32 @@ export default class Engine {
 
     constructor() {
 
+        // canvas
         this.canvas = null;
         this.ctx = null;
 
+        // Contexte d'exécution
         this.sceneContext = new SceneContext();
-        this.renderer = new Renderer(this);
-        this.sceneLoader = new SceneLoader();
+
+        // Ressources
         this.scene = null;
         this.background = new Image();
+
+        // Chargement
+        this.sceneLoader = new SceneLoader();
+
+        // Rendu
+        this.renderer = new Renderer(this);
         this.flashlight = new Flashlight(this);
+
+        // Entrées
         this.inputManager = new InputManager(this);
         this.interactionManager = new InteractionManager(this);
+
+        // Logique
         this.actionManager = new ActionManager(this);
+
+        // Services
         this.popupService = new PopupService(this);
         this.inputPopupService = new InputPopupService(this);
         this.inventoryService = new InventoryService(this);
