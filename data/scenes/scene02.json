@@ -37,21 +37,25 @@
                 },
 
                 "onSuccess": [
-                    {
-                      "type": "popup",
-                      "title": "Succès",
-                      "text": "Vous trouvez une petite clé.",
-                        "image": "assets/sprites/key01.png"
-                    },
-                    {
-                      "type": "returnToWix",
-                      "result": "keyFound"
-                    },
+
                     {
                         "type": "inventoryAdd",
                         "item": "key"
+                    },
+
+                    {
+                        "type": "popup",
+                        "title": "Succès",
+                        "text": "Vous trouvez une petite clé.",
+                        "image": "assets/sprites/key01.png"
+                    },
+
+                    {
+                        "type": "returnToHost",
+                        "result": "keyFound"
                     }
-                ],
+
+                ]
 
                 "onFailure": [
                     {
@@ -63,6 +67,69 @@
                 }
                 
             ]
+        }
+
+        {
+            "id":"safe01",
+
+            "actions":[
+
+                {
+
+                    "type":"condition",
+
+                    "condition":{
+
+                        "type":"inventory",
+
+                        "item":"key"
+
+                    },
+
+                    "onSuccess":[
+
+                        {
+                            "type":"inventoryAdd",
+
+                            "item":"jewels"
+                        },
+
+                        {
+                            "type":"popup",
+
+                            "title":"Coffre",
+
+                            "text":"Vous ouvrez le coffre et récupérez les joyaux.",
+
+                            "image":"assets/sprites/jewels01.png"
+                        },
+
+                        {
+                            "type":"returnToHost",
+
+                            "result":"jewelsFound"
+                        }
+
+                    ],
+
+                    "onFailure":[
+
+                        {
+
+                            "type":"popup",
+
+                            "title":"Le coffre",
+
+                            "text":"Cette serrure nécessite une clé."
+
+                        }
+
+                    ]
+
+                }
+
+            ]
+
         }
     ]
 }
