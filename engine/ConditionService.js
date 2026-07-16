@@ -26,31 +26,35 @@ export default class ConditionService {
 
     execute(action, object, callback) {
 
-        this.engine.inputPopupService.show({
+        switch (action.condition.type) {
 
-            title: action.input.title,
-            text: action.input.text,
-            placeholder: action.input.placeholder,
-            button: action.input.button,
+            case "equals" :
 
-            image: object?.image
+                this.engine.inputPopupService.show({
 
-        },(value) => {
+                    title: action.input.title,
+                    text: action.input.text,
+                    placeholder: action.input.placeholder,
+                    button: action.input.button,
 
-                if (this.engine.conditionService.check(action.condition, value)) {
+                    image: object?.image
 
-                    callback(true);
+                },(value) => {
 
-                } else {
+                        if (this.engine.conditionService.check(action.condition, value)) {
 
-                   callback(false);
+                            callback(true);
 
-                }
+                        } else {
 
-            }
+                           callback(false);
 
-       );
+                        }
 
-    }
+                    }
+
+               );
+
+        }
 
 }
