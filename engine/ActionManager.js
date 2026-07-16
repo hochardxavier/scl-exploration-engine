@@ -36,6 +36,10 @@ export default class ActionManager {
                     this.handleCondition(action, object);
                     break;
 
+                case "inventoryAdd":
+                    this.engine.inventoryService.add(action.item);
+                    break;
+
             }
             
         } 
