@@ -13,6 +13,7 @@ export default class InventoryService {
     add(item) {
 
         this.engine.sceneContext.inventory.push(item);
+        console.log(this.engine.sceneContext.inventory);
 
     }
 
