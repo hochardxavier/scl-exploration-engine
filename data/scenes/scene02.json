@@ -69,6 +69,28 @@
             ]
         },
 
+         {
+            "id": "paper01",
+            
+            "image": "assets/sprites/paper01.png",
+            
+            "x": 15,
+            "y": 70,
+            
+            "width": 5,
+            "height": 5,
+            
+            "visible": true,
+            
+            "actions":[
+                {
+                    "type": "popup",
+                    "title": "Document froissé",
+                    "text": "4268 est inscrit sur le papier."
+                }
+            ]
+        },
+
         {
             "id":"safe01",
 
