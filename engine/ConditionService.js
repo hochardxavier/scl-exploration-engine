@@ -24,4 +24,8 @@ export default class ConditionService {
 
     }
 
+    execute(action, object, callback) {
+
+    }
+
 }
