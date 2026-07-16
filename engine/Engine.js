@@ -60,8 +60,7 @@ export default class Engine {
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
 
-        //
-        Entrées
+        //Entrées
         this.inputManager.init();
         this.interactionManager.init();
 
