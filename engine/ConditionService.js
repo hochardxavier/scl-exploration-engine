@@ -26,6 +26,31 @@ export default class ConditionService {
 
     execute(action, object, callback) {
 
+        this.engine.inputPopupService.show({
+
+            title: action.input.title,
+            text: action.input.text,
+            placeholder: action.input.placeholder,
+            button: action.input.button,
+
+            image: object?.image
+
+        },(value) => {
+
+                if (this.engine.conditionService.check(action.condition, value)) {
+
+                    callback(true);
+
+                } else {
+
+                   callback(false);
+
+                }
+
+            }
+
+       );
+
     }
 
 }
