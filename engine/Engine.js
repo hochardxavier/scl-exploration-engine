@@ -46,6 +46,9 @@ export default class Engine {
         this.inputPopupService = new InputPopupService(this);
         this.inventoryService = new InventoryService(this);
         this.conditionService = new ConditionService(this);
+
+        // Retour
+        this.listeners = {};
         
     }
 
@@ -126,6 +129,24 @@ export default class Engine {
     render() {
 
       this.renderer.render();  
+
+    }
+
+    on(eventName, callback) {
+
+        this.listeners[eventName] = callback;
+
+    }
+
+    emit(eventName, data = null) {
+
+        const listener = this.listeners[eventName];
+
+        if (listener) {
+
+            listener(data);
+
+        }
 
     }
 
