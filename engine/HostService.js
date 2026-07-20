@@ -10,11 +10,29 @@ export default class HostService {
 
     async receive(request) {
 
-        this.engine.loadContext(request);
+        const context = this.buildContext(request);
+
+        this.engine.loadContext(context);
 
         await this.engine.loadScene();
 
         this.engine.start();
+
+    }
+
+    buildContext(request) {
+
+        return {
+
+            flashlightIntensity: 90,
+
+            inventory: [],
+
+            flags: {},
+
+            ...request
+
+        };
 
     }
 
