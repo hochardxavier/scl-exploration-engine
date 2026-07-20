@@ -13,5 +13,11 @@ const context = {
     sceneId: "scene02"
 };
 
-await hostService.receive(context);
+//await hostService.receive(context);
+
+const response = await hostService.receive({
+    sceneId: "scene02"
+});
+
+console.log(response);
 
