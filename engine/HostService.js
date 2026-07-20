@@ -20,6 +20,8 @@ export default class HostService {
 
         this.engine.start();
 
+        return this.buildResponse();
+
     }
 
     buildContext(request) {
@@ -45,6 +47,16 @@ export default class HostService {
             throw new Error("HostProtocolError : Missing required property 'sceneId'.");
 
         }
+
+    }
+
+    buildResponse() {
+
+        return {
+
+            status: "completed"
+
+        };
 
     }
 
