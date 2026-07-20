@@ -233,3 +233,40 @@ Définition de l'état final retourné par le moteur.
 Introduction des événements (emit).
 Séparation explicite entre le protocole et le transport.
 Introduction du champ status en remplacement de success, afin que le moteur décrive un état de sortie sans interpréter son résultat.
+
+Ajouter la réponse désormais validée.
+
+Requête
+{
+    "hostId": "wix",
+    "sessionId": "session-001",
+    "sceneId": "scene02",
+    "inventory": [],
+    "flags": {},
+    "flashlightIntensity": 90
+}
+Réponse
+{
+    "status": "completed",
+    "result": "keyFound",
+    "hostId": "wix",
+    "sessionId": "session-001",
+    "sceneId": "scene02",
+    "inventory": [
+        "key"
+    ],
+    "flags": {}
+}
+Action DSL
+
+Nouvelle action :
+
+{
+    "type": "returnToHost",
+    "result": "keyFound"
+}
+
+Description :
+
+Termine l'exécution de la scène et rend la main au Host. Le moteur émet un événement returnToHost contenant l'action complète.
+
