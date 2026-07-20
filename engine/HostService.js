@@ -62,7 +62,9 @@ export default class HostService {
 
         return {
 
-            status: "completed"
+            status: "completed",
+
+            result: action.result,
 
             inventory: this.engine.inventory,
 
