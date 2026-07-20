@@ -14,18 +14,31 @@ Une nouvelle classe n'est créée que lorsqu'elle répond à un besoin réel du 
 
 ## Architecture actuelle
 
-app.js
-│
-▼
-Engine
-│
-├── SceneLoader
-├── Renderer
-├── Flashlight
-├── InputManager
-├── InteractionManager
-├── PopupManager (à venir)
-└── InventoryManager (à venir)
+          Host
+            │
+            ▼
+      HostService
+            │
+            ▼
+         Engine
+            │
+      ┌─────┴─────┐
+      ▼           ▼
+SceneLoader   ActionManager
+                    │
+                    ▼
+              InventoryService
+              ConditionService
+              PopupService
+                    │
+                    ▼
+           sceneContext
+                    │
+                    ▼
+      returnToHost (emit)
+                    │
+                    ▼
+             HostService
 
 
 ### Engine
