@@ -1,5 +1,5 @@
 import Engine from "./engine/Engine.js";
-import HostService from "./HostService.js";
+import HostService from "./engine/HostService.js";
 
 const engine = new Engine();
 
