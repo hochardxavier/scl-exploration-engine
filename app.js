@@ -1,23 +1,11 @@
 import Engine from "./engine/Engine.js";
+import HostService from "./HostService.js";
 
 const engine = new Engine();
 
 await engine.init();
 
-engine.loadContext({
+const hostService = new HostService(engine);
 
-    hostId: "dev",
-
-    sessionId: "test",
-
-    sceneId: "scene02",
-
-    inventory: [],
-
-    flags: {}
-
-});
-
-await engine.loadScene();
-engine.start();
+await hostService.receive(context);
 
