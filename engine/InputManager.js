@@ -20,7 +20,7 @@ export default class InputManager {
 
         canvas.addEventListener("pointermove", (event) => {
 
-            updatePointerPosition(event)
+            this.updatePointerPosition(event)
 
             //console.log(event.clientX, event.clientY);
 
@@ -28,7 +28,7 @@ export default class InputManager {
 
         canvas.addEventListener("pointerdown", () => {
 
-            updatePointerPosition(event)
+            this.updatePointerPosition(event)
 
             this.pointerPressed = true;
             this.pointerJustPressed = true;
