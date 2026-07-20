@@ -20,13 +20,7 @@ export default class InputManager {
 
         canvas.addEventListener("pointermove", (event) => {
 
-            const rect = canvas.getBoundingClientRect();
-
-            const scaleX = canvas.width / rect.width;
-            const scaleY = canvas.height / rect.height;
-
-            this.pointerX = (event.clientX - rect.left) * scaleX;
-            this.pointerY = (event.clientY - rect.top) * scaleY;
+            updatePointerPosition(event)
 
             //console.log(event.clientX, event.clientY);
 
@@ -34,13 +28,7 @@ export default class InputManager {
 
         canvas.addEventListener("pointerdown", () => {
 
-            const rect = canvas.getBoundingClientRect();
-
-            const scaleX = canvas.width / rect.width;
-            const scaleY = canvas.height / rect.height;
-
-            this.pointerX = (event.clientX - rect.left) * scaleX;
-            this.pointerY = (event.clientY - rect.top) * scaleY;
+            updatePointerPosition(event)
 
             this.pointerPressed = true;
             this.pointerJustPressed = true;
@@ -55,6 +43,23 @@ export default class InputManager {
             //console.log(this.pointerPressed);
 
         });
+
+    }
+
+    updatePointerPosition(event) {
+
+        // Les Pointer Events sont exprimés dans les coordonnées du viewport.
+        // On les convertit dans le repère logique du canvas afin que le moteur
+        // fonctionne correctement sur PC, Android et iOS, quelle que soit
+        // la mise à l'échelle appliquée par le navigateur.
+
+        const rect = this.engine.canvas.getBoundingClientRect();
+
+        const scaleX = this.engine.canvas.width / rect.width;
+        const scaleY = this.engine.canvas.height / rect.height;
+
+        this.pointerX = (event.clientX - rect.left) * scaleX;
+        this.pointerY = (event.clientY - rect.top) * scaleY;
 
     }
 
