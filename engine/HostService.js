@@ -60,15 +60,15 @@ export default class HostService {
 
     buildResponse(action) {
 
+        const context = this.engine.getContext();
+
         return {
 
             status: "completed",
 
             result: action.result,
 
-            inventory: this.engine.inventory,
-
-            flags: this.engine.flags
+            ...context
 
         };
 
