@@ -20,12 +20,19 @@ export default class InputManager {
 
         canvas.addEventListener("pointermove", (event) => {
 
-            this.pointerX = event.clientX;
-            this.pointerY = event.clientY;
+            const rect = canvas.getBoundingClientRect();
+
+            this.pointerX = event.clientX - rect.left;
+            this.pointerY = event.clientY - rect.top;
 
         });
 
         canvas.addEventListener("pointerdown", () => {
+
+            const rect = canvas.getBoundingClientRect();
+
+            this.pointerX = event.clientX - rect.left;
+            this.pointerY = event.clientY - rect.top;
 
             this.pointerPressed = true;
             this.pointerJustPressed = true;
