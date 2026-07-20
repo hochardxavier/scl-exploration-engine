@@ -54,6 +54,10 @@ export default class ActionManager {
                     this.engine.inventoryService.add(action.item);
                     break;
 
+                case "emit":
+                    this.engine.emit(action.event, action);
+                    break;
+
             }
             
         } 
