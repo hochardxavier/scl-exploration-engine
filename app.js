@@ -8,7 +8,7 @@ await engine.init();
 
 const hostService = new HostService(engine);
 
-const adapter = new BrowserHostAdapter(hostService);
+const hostAdapter = new BrowserHostAdapter(hostService);
 
-adapter.start();
+hostAdapter.start();
 
