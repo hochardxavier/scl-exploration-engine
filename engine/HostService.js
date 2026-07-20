@@ -64,6 +64,10 @@ export default class HostService {
 
             status: "completed"
 
+            inventory: this.engine.inventory,
+
+            flags: this.engine.flags
+
         };
 
     }
