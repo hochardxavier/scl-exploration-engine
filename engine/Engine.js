@@ -152,13 +152,7 @@ export default class Engine {
 
     getContext() {
 
-        return {
-
-            inventory: [...this.sceneContext.inventory],
-
-            flags: { ...this.sceneContext.flags }
-
-        };
+        return structuredClone(this.sceneContext);
 
     }
 
