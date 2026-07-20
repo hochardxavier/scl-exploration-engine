@@ -18,9 +18,17 @@ export default class HostService {
 
         await this.engine.loadScene();
 
-        this.engine.start();
+        return new Promise((resolve) => {
 
-        return this.buildResponse();
+            this.engine.on("returnToHost", (action) => {
+
+                resolve(this.buildResponse(action));
+
+            });
+
+            this.engine.start();
+
+        });
 
     }
 
