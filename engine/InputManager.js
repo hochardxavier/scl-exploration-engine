@@ -25,6 +25,8 @@ export default class InputManager {
             this.pointerX = event.clientX - rect.left;
             this.pointerY = event.clientY - rect.top;
 
+            console.log(event.clientX, event.clientY);
+
         });
 
         canvas.addEventListener("pointerdown", () => {
