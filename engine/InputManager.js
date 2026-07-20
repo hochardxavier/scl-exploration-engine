@@ -22,10 +22,13 @@ export default class InputManager {
 
             const rect = canvas.getBoundingClientRect();
 
-            this.pointerX = event.clientX - rect.left;
-            this.pointerY = event.clientY - rect.top;
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
 
-            console.log(event.clientX, event.clientY);
+            this.pointerX = (event.clientX - rect.left) * scaleX;
+            this.pointerY = (event.clientY - rect.top) * scaleY;
+
+            //console.log(event.clientX, event.clientY);
 
         });
 
@@ -33,8 +36,11 @@ export default class InputManager {
 
             const rect = canvas.getBoundingClientRect();
 
-            this.pointerX = event.clientX - rect.left;
-            this.pointerY = event.clientY - rect.top;
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+
+            this.pointerX = (event.clientX - rect.left) * scaleX;
+            this.pointerY = (event.clientY - rect.top) * scaleY;
 
             this.pointerPressed = true;
             this.pointerJustPressed = true;
