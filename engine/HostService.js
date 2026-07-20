@@ -62,15 +62,15 @@ export default class HostService {
 
         const context = this.engine.getContext();
 
-        return {
+            return {
 
-            status: "completed",
+                status: "completed",
 
-            result: action.result,
+                result: action.result,
 
-            ...context
+                ...context
 
-        };
+            };   
 
     }
 
