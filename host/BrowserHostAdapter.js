@@ -1,23 +1,57 @@
-class BrowserHostAdapter {
+export default class BrowserHostAdapter {
 
-    constructor(hostService){
+    constructor(hostService) {
 
         this.hostService = hostService;
 
     }
 
-    start(){
+    start() {
 
-        // écoute les messages
+        // Informe le Host que le moteur est prêt.
+        this.send({
+            type: "engine-ready"
+        });
+
+        // Ecoute les messages du Host.
+        window.addEventListener("message", async (event) => {
+
+            await this.handleMessage(event.data);
+
+        });
 
     }
 
-    async onLaunch(payload){
+    async handleMessage(message) {
 
-        const response =
-            await this.hostService.receive(payload);
+        switch (message.type) {
 
-        // renvoie la réponse
+            case "launch":
+
+                const response = await this.hostService.receive(
+                    message.payload
+                );
+
+                this.send({
+                    type: "launch-completed",
+                    payload: response
+                });
+
+                break;
+
+            default:
+
+                console.warn(
+                    `Message inconnu : ${message.type}`
+                );
+
+        }
+
+    }
+
+    send(message) {
+
+        window.parent.postMessage(message, "*");
 
     }
 
