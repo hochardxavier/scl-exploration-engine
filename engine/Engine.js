@@ -154,9 +154,9 @@ export default class Engine {
 
         return {
 
-            inventory: this.inventoryService.getInventory(),
+            inventory: [...this.sceneContext.inventory],
 
-            flags: this.conditionService.getFlags()
+            flags: { ...this.sceneContext.flags }
 
         };
 
