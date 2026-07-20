@@ -12,6 +12,8 @@ export default class HostService {
 
         const context = this.buildContext(request);
 
+        this.validateContext(context);
+
         this.engine.loadContext(context);
 
         await this.engine.loadScene();
@@ -33,6 +35,16 @@ export default class HostService {
             ...request
 
         };
+
+    }
+
+    validateContext(context) {
+
+        if (!context.sceneId) {
+
+            throw new Error("HostProtocolError : Missing required property 'sceneId'.");
+
+        }
 
     }
 
