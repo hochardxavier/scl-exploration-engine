@@ -140,11 +140,6 @@
                             "type":"returnToHost",
 
                             "result":"jewelsFound"
-                        },
-
-                        {
-                            "type":"emit",
-                            "event":"missionCompleted"
                         }
 
                     ],
