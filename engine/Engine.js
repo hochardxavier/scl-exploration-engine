@@ -150,6 +150,18 @@ export default class Engine {
 
     }
 
+    getContext() {
+
+        return {
+
+            inventory: this.inventoryService.getInventory(),
+
+            flags: this.conditionService.getFlags()
+
+        };
+
+    }
+
     stop() {
 
     }
