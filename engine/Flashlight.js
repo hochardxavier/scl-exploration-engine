@@ -54,6 +54,8 @@ export default class Flashlight {
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+        console.log(this.engine.inputManager.pointerX, this.engine.inputManager.pointerY);
+
     }
 
     stop() {
