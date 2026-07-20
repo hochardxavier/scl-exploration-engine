@@ -50,13 +50,14 @@ export default class Flashlight {
         // bord du halo : noir opaque
         gradient.addColorStop(1, `rgba(0, 0, 0, ${this.intensity})`);
 
-        //dessine le voile avec le dégradé
-        //ctx.fillStyle = gradient;
+        //////////////////////////////temporaire au dessus
         ctx.fillStyle = "red";
         ctx.beginPath();
         ctx.arc(this.x, this.y, 8, 0, Math.PI * 2);
         ctx.fill();
         //////////////////////////////temporaire au dessus
+        //dessine le voile avec le dégradé
+        ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         console.log(this.engine.inputManager.pointerX, this.engine.inputManager.pointerY);
