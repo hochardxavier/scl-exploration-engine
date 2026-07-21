@@ -1,4 +1,4 @@
-#1. Objectif
+# 1. Objectif
 
 Le SCL Exploration Engine est un moteur d'exécution de scènes interactives.
 
@@ -8,7 +8,7 @@ Il n'est pas responsable de la campagne, des joueurs, des missions ou des sauveg
 
 Ces responsabilités appartiennent au Host.
 
-#2. Les responsabilités
+# 2. Les responsabilités
 
 Composant >>	Responsable de
 Engine >>	Jouer une scène
@@ -16,33 +16,33 @@ HostService >>	Traduire le contexte entre Host et Engine
 BrowserHostAdapter >>	Transport des messages
 Host (Wix) >>	Campagne, joueurs, sauvegarde, progression
 
-#3. Les règles absolues
+# 3. Les règles absolues
 
-##Règle 1
+## Règle 1
 
 Le moteur ne connaît jamais son hôte.
 
-##Règle 2
+## Règle 2
 
 Le moteur n'accède jamais directement aux bases de données.
 
-##Règle 3
+## Règle 3
 
 Le moteur ne connaît jamais les GameGroups.
 
-##Règle 4
+## Règle 4
 
 Le moteur ne connaît jamais MemberId.
 
-##Règle 5
+## Règle 5
 
 Toute communication passe par HostService.
 
-##Règle 6
+## Règle 6
 
 Toute communication avec le navigateur passe par BrowserHostAdapter.
 
-##Règle 7
+## Règle 7
 
 Le moteur produit des événements.
 
@@ -60,7 +60,7 @@ Il dira seulement :
 
 Le joueur a obtenu les joyaux.
 
-#4. Cycle de vie
+# 4. Cycle de vie
 
 Host
 
@@ -88,7 +88,7 @@ Host
 
 Engine détruit
 
-#5. Le protocole Host v1
+# 5. Le protocole Host v1
 
 Entrée
 {
@@ -101,7 +101,7 @@ Sortie
     payload: {}
 }
 
-#6. Les interdictions
+# 6. Les interdictions
 
 
 
@@ -117,7 +117,7 @@ Dans Engine :
 
 (sauf si un jour on décide explicitement de créer un service réseau.)
 
-#7. Les évolutions prévues
+# 7. Les évolutions prévues
 
 Host pourra recevoir plus tard :
 
@@ -135,17 +135,17 @@ download-file
 
 etc.
 
-#8. Les principes fondateurs
+# 8. Les principes fondateurs
 
-##Responsabilité unique
+## Responsabilité unique
 
 Chaque classe ne fait qu'une chose.
 
-##Découplage
+## Découplage
 
 Le moteur ignore son environnement.
 
-##Pilotage par les données
+## Pilotage par les données
 
 Les scènes sont décrites par du JSON.
 
@@ -153,7 +153,7 @@ Le moteur les interprète.
 
 Il ne contient jamais la logique métier.
 
-##Événementiel
+## Événementiel
 
 Le moteur ne décide pas.
 
