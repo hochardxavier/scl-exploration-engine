@@ -1,3 +1,5 @@
+Le SCL Exploration Engine est un moteur d'exécution de scènes interactives, indépendant de toute plateforme. Il reçoit un contexte, exécute une scène, puis restitue un résultat à son hôte sans jamais connaître la logique métier qui l'entoure.
+
 # 1. Objectif
 
 Le SCL Exploration Engine est un moteur d'exécution de scènes interactives.
