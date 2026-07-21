@@ -48,11 +48,6 @@
                         "title": "Succès",
                         "text": "Vous trouvez une petite clé.",
                         "image": "assets/sprites/key01.png"
-                    },
-
-                    {
-                        "type": "returnToHost",
-                        "result": "keyFound"
                     }
 
                 ],
