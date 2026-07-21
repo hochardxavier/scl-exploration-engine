@@ -49,6 +49,15 @@ export default class BrowserHostAdapter {
 
     }
 
+    async handleLaunch(payload) {
+
+        const response =
+            await this.hostService.receive(payload);
+
+        this.send(response);
+
+    }
+
     send(message) {
 
         window.parent.postMessage(message, "*");
