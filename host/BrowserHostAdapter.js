@@ -28,15 +28,7 @@ export default class BrowserHostAdapter {
 
             case "launch":
 
-                const response = await this.hostService.receive(
-                    message.payload
-                );
-
-                this.send({
-                    type: "launch-completed",
-                    payload: response
-                });
-
+                await this.handleLaunch(message.payload);
                 break;
 
             default:
