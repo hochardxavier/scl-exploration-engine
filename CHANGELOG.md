@@ -1,7 +1,48 @@
 # CHANGELOG
 
 Toutes les évolutions importantes du SCL Exploration Engine sont documentées dans ce fichier.
+
 ---
+
+### Jalon
+
+🎯 Première communication bidirectionnelle entre le moteur et son Host.
+
+---
+
+## v0.1.0-alpha9 (21/07/2026)
+
+### Nouveautés
+
+✔ Création du `HostService`
+
+✔ Création du `BrowserHostAdapter`
+
+✔ Première intégration du moteur dans une page Wix
+
+✔ Mise en place du protocole Host v1
+
+✔ Transmission d'un contexte d'exécution depuis le Host
+
+✔ Retour du résultat d'une scène vers le Host
+
+✔ Validation complète de la communication bidirectionnelle Wix ⇄ Engine
+
+### Architecture
+
+- Le moteur est désormais totalement indépendant de son environnement d'exécution.
+- Toute communication avec l'hôte transite par `HostService`.
+- Toute communication avec le navigateur transite par `BrowserHostAdapter`.
+- Le moteur ne connaît ni Wix, ni Velo, ni les GameGroups, ni les MemberId.
+
+### Documentation
+
+✔ Création du document **Architecture Host v1**
+
+✔ Formalisation des responsabilités des composants
+
+✔ Formalisation du protocole de communication Host ↔ Engine
+
 ## v0.1.0-alpha8 (15/07/2026)
 
 ✔ Création du système de conditions
@@ -19,6 +60,8 @@ Toutes les évolutions importantes du SCL Exploration Engine sont documentées d
 ✔ Validation par la touche Entrée
 
 ✔ Refactorisation de ActionManager pour exécuter des listes d'actions
+
+---
 
 ## v0.1.0-alpha7 (09/07/2026)
 
