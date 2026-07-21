@@ -158,9 +158,15 @@ export default class Engine {
 
     stop() {
 
+        // TODO :
+        // Arrêter proprement le moteur.
+
     }
 
     destroy() {
 
+        // TODO :
+        // Libérer toutes les ressources.
+        
     }
 }
