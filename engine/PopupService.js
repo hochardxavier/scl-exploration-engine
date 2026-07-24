@@ -59,4 +59,13 @@ export default class PopupService {
 
     }
 
+    close() {
+
+        this.hide();
+
+        if (this.options.onClose) {
+            this.engine.actionHandler.handleActions(this.options.onClose);
+        }
+    }
+
 }
