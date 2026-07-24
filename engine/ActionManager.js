@@ -29,6 +29,7 @@ export default class ActionManager {
                                                     title: action.title,
                                                     text: action.text,
                                                     image: action.image || object?.image
+                                                    onClose: action.onClose
                                                   });
                     break;
 
