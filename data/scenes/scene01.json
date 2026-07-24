@@ -24,9 +24,13 @@
                     "type": "popup",
                     "title": "Document froissé",
                     "text": "4268 est inscrit sur le papier."
-                },
-                {
-                    "type": "returnToHost"
+                    "onClose": [
+                        {
+                          "type": "returnToHost",
+                          "event": "paperFound",
+                          "code": "4268"
+                        }
+                      ]
                 }
             ]
         }
