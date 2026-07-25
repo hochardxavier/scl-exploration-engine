@@ -64,16 +64,23 @@ export default class PopupService {
 
     close() {
 
-        this.hide();
+        console.log("Popup fermé");
 
-        console.log("Popup fermé"); //test a retirer plus tard
-
-        if (this.options.onClose) {
-
-            console.log("Actions onClose :", this.options.onClose); //test à retirer plus tard
-            
-            this.engine.actionHandler.handleActions(this.options.onClose);
+        if (this.currentPopup) {
+            this.currentPopup.remove();
+            this.currentPopup = null;
         }
+
+        if (this.options?.onClose) {
+
+            console.log("Actions onClose :", this.options.onClose);
+
+            this.engine.actionManager.handleActions(this.options.onClose);
+
+        }
+
+        this.options = null;
+
     }
 
 }
