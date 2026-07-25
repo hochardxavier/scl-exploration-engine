@@ -63,6 +63,8 @@ export default class PopupService {
 
         this.hide();
 
+        console.log("Popup fermé"); //test a retirer plus tard
+
         if (this.options.onClose) {
 
             console.log("Actions onClose :", this.options.onClose); //test à retirer plus tard
