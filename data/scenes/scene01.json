@@ -23,7 +23,7 @@
                 {
                     "type": "popup",
                     "title": "Document froissé",
-                    "text": "4268 est inscrit sur le papier."
+                    "text": "4268 est inscrit sur le papier.",
                     "onClose": [
                         {
                           "type": "returnToHost",
