@@ -19,6 +19,9 @@ export default class PopupService {
         if (this.currentPopup !== null) {
             return;
         }
+
+        // Conserver les données du popup (notamment onClose)
+        this.options = data;
         
         const overlay = document.createElement("div");
         overlay.className = "scl-popup-overlay";
@@ -52,9 +55,9 @@ export default class PopupService {
 
         this.currentPopup = overlay;
 
+        // Le bouton appelle désormais la méthode close()
         button.addEventListener("click", () => {
-            overlay.remove();
-            this.currentPopup = null;
+            this.close();
         });
 
     }
