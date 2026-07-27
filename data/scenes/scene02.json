@@ -47,7 +47,14 @@
                         "type": "popup",
                         "title": "Succès",
                         "text": "Vous trouvez une petite clé.",
-                        "image": "assets/sprites/key01.png"
+                        "image": "assets/sprites/key01.png",
+                        "onClose": [
+                            {
+                              "type": "returnToHost",
+                              "event": "paperFound",
+                              "code": "4268"
+                            }
+                        ]
                     }
 
                 ],
