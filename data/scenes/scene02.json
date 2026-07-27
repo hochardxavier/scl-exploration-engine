@@ -51,7 +51,7 @@
                         "onClose": [
                             {
                               "type": "returnToHost",
-                              "event": "keyFound",
+                              "event": "keyFound"
                             }
                         ]
                     }
