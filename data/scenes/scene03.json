@@ -26,18 +26,14 @@
                     "type":"condition",
 
                     "condition":{
-
                         "type":"inventory",
-
                         "item":"key"
-
                     },
 
                     "onSuccess":[
 
                         {
                             "type":"inventoryAdd",
-
                             "item":"jewels"
                         },
 
@@ -57,17 +53,11 @@
                     ],
 
                     "onFailure":[
-
                         {
-
                             "type":"popup",
-
                             "title":"Le coffre",
-
                             "text":"Cette serrure nécessite une clé."
-
                         }
-
                     ]
 
                 }
