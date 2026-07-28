@@ -45,7 +45,7 @@
                             "onClose": [
                               {
                                 "type": "returnToHost",
-                                "event": "jewelsFound",
+                                "event": "jewelsFound"
                               }
                             ]
                         }
