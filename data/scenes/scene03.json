@@ -11,8 +11,8 @@
 
             "image": "assets/sprites/safe01.png",
             
-            "x": 70,
-            "y": 20,
+            "x": 20,
+            "y": 70,
             
             "width": 10,
             "height": 10,
