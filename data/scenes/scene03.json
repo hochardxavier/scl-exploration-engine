@@ -12,10 +12,10 @@
             "image": "assets/sprites/safe01.png",
             
             "x": 10,
-            "y": 85,
+            "y": 75,
             
-            "width": 10,
-            "height": 10,
+            "width": 12,
+            "height": 12,
             
             "visible": true,
             
