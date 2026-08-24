@@ -51,10 +51,10 @@ export default class Flashlight {
         gradient.addColorStop(1, `rgba(0, 0, 0, ${this.intensity})`);
 
         //////////////////////////////temporaire au dessus
-        ctx.fillStyle = "red";
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, 8, 0, Math.PI * 2);
-        ctx.fill();
+        //ctx.fillStyle = "red";
+        //ctx.beginPath();
+        //ctx.arc(this.x, this.y, 8, 0, Math.PI * 2);
+        //ctx.fill();
         //////////////////////////////temporaire au dessus
         //dessine le voile avec le dégradé
         ctx.fillStyle = gradient;
