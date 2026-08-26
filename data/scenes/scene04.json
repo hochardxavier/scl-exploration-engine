@@ -24,10 +24,34 @@
                     "type": "popup",
                     "title": "Ordinateur portable",
                     "text": "Cet ordinateur est verrouillé par un mot de passe.",           
-                },
-
-              
+                }
             ]
-        }
+        },
+        {
+            "id": "print01",
+            
+            "image": "assets/sprites/print01.png",
+            
+            "x": 50,
+            "y": 50,
+            
+            "width": 5,
+            "height": 5,
+            
+            "visible": true,
+            
+            "actions":[
+                {
+                    "type": "popup",
+                    "title": "Imprimante",
+                    "text": "Vous trouvez un document imprimé.",
+                    "onClose": [
+                        {
+                          "type": "returnToHost",
+                          "event": "paperFound"
+                        }
+                    ]
+                      
+                }
     ]
 }
