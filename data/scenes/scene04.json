@@ -1,1 +1,33 @@
+{
+    "id": "scene04",
+    
+    "name": "bureau avocat",
+    
+    "background": "assets/scenes/bureau001.png",
+    
+    "objects": [
+        {
+            "id": "pc01",
+            
+            "image": "assets/sprites/pc01.png",
+            
+            "x": 90,
+            "y": 89,
+            
+            "width": 5,
+            "height": 5,
+            
+            "visible": true,
+            
+            "actions":[
+                {
+                    "type": "popup",
+                    "title": "Ordinateur portable",
+                    "text": "Cet ordinateur est verrouillé par un mot de passe.",           
+                },
 
+              
+            ]
+        }
+    ]
+}
