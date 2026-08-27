@@ -34,6 +34,10 @@
                     "text": "Vous trouvez un document imprimé.",
                     "onClose": [
                         {
+                            "type": "inventoryAdd",
+                            "item": "paper"
+                        },
+                        {
                             "type": "returnToHost",
                             "event": "paperFound"
                         }
