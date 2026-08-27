@@ -8,8 +8,8 @@
             "image": "assets/sprites/pc01.png",
             "x": 60,
             "y": 60,
-            "width": 12,
-            "height": 12,
+            "width": 15,
+            "height": 15,
             "visible": true,
             "actions": [
                 {
@@ -22,8 +22,8 @@
         {
             "id": "print01",
             "image": "assets/sprites/print01.png",
-            "x": 87,
-            "y": 40,
+            "x": 85,
+            "y": 41,
             "width": 9,
             "height": 9,
             "visible": true,
