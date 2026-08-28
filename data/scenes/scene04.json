@@ -8,7 +8,7 @@
             "image": "assets/sprites/pc01.png",
             "x": 60,
             "y": 60,
-            "width": 14.5,
+            "width": 29,
             "height": 14.5,
             "visible": true,
             "actions": [
@@ -24,7 +24,7 @@
             "image": "assets/sprites/print01.png",
             "x": 85,
             "y": 40.5,
-            "width": 8.5,
+            "width": 17,
             "height": 8.5,
             "visible": true,
             "actions": [
