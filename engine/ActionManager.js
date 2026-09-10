@@ -59,6 +59,13 @@ export default class ActionManager {
                     this.engine.emit("returnToHost", action);
                     break;
 
+                case "setObject":
+                    this.engine.setObjectState(
+                        action.objectId,
+                        action.properties
+                    );
+                    break;
+
             }
             
         } 
