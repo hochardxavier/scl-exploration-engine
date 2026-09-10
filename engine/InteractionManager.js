@@ -21,6 +21,7 @@ export default class InteractionManager {
 
         for (const object of this.engine.scene.objects) {
 
+                 // Les objets invisibles ne sont pas interactifs
                 if (object.visible === false) {
                     continue;
                 }
