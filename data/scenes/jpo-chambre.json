@@ -1,0 +1,287 @@
+{
+  "id": "jpo-chambre",
+  "name": "Chambre du volontaire",
+  "background": "images/chambre001.png",
+
+  "objects": [
+
+    {
+      "id": "lit01",
+      "image": "images/lit01.png",
+      "x": 36.5,
+      "y": 51.0,
+      "width": 41.0,
+      "height": 29.5,
+      "visible": true,
+
+      "actions": [
+
+        {
+          "type": "popup",
+          "title": "Le lit",
+          "text": "Vous incitez le jeune à mettre son lit au carré.",
+          "button": "Mettre le lit au carré",
+          "onClose": [
+
+            {
+              "type": "setObject",
+              "objectId": "lit01",
+              "properties": {
+                "visible": false
+              }
+            },
+
+            {
+              "type": "setObject",
+              "objectId": "lit02",
+              "properties": {
+                "visible": true
+              }
+            },
+
+            {
+              "type": "inventoryAdd",
+              "item": "lit"
+            },
+
+            {
+              "type": "condition",
+              "condition": {
+                "type": "inventory",
+                "item": "corbeille"
+              },
+
+              "onSuccess": [
+                {
+                  "type": "condition",
+                  "condition": {
+                    "type": "inventory",
+                    "item": "armoire"
+                  },
+
+                  "onSuccess": [
+                    {
+                      "type": "popup",
+                      "title": "Chambre terminée",
+                      "text": "Bravo ! Vous avez accompagné le volontaire dans la remise en ordre de sa chambre.",
+                      "onClose": [
+                        {
+                          "type": "returnToHost",
+                          "status": "completed"
+                        }
+                      ]
+                    }
+                  ],
+
+                  "onFailure": []
+                }
+              ],
+
+              "onFailure": []
+            }
+
+          ]
+        }
+
+      ]
+    },
+
+
+    {
+      "id": "lit02",
+      "image": "images/lit02.png",
+      "x": 36.5,
+      "y": 51.0,
+      "width": 41.0,
+      "height": 29.5,
+      "visible": false
+    },
+
+
+    {
+      "id": "corbeille01",
+      "image": "images/corbeille01.png",
+      "x": 82.0,
+      "y": 69.0,
+      "width": 11.0,
+      "height": 16.0,
+      "visible": true,
+
+      "actions": [
+
+        {
+          "type": "popup",
+          "title": "La corbeille",
+          "text": "Vous incitez le jeune à vider et ranger sa corbeille.",
+          "button": "Vider la corbeille",
+          "onClose": [
+
+            {
+              "type": "setObject",
+              "objectId": "corbeille01",
+              "properties": {
+                "visible": false
+              }
+            },
+
+            {
+              "type": "setObject",
+              "objectId": "corbeille02",
+              "properties": {
+                "visible": true
+              }
+            },
+
+            {
+              "type": "inventoryAdd",
+              "item": "corbeille"
+            },
+
+            {
+              "type": "condition",
+              "condition": {
+                "type": "inventory",
+                "item": "lit"
+              },
+
+              "onSuccess": [
+                {
+                  "type": "condition",
+                  "condition": {
+                    "type": "inventory",
+                    "item": "armoire"
+                  },
+
+                  "onSuccess": [
+                    {
+                      "type": "popup",
+                      "title": "Chambre terminée",
+                      "text": "Bravo ! Vous avez accompagné le volontaire dans la remise en ordre de sa chambre.",
+                      "onClose": [
+                        {
+                          "type": "returnToHost",
+                          "status": "completed"
+                        }
+                      ]
+                    }
+                  ],
+
+                  "onFailure": []
+                }
+              ],
+
+              "onFailure": []
+            }
+
+          ]
+        }
+
+      ]
+    },
+
+
+    {
+      "id": "corbeille02",
+      "image": "images/corbeille02.png",
+      "x": 82.0,
+      "y": 69.0,
+      "width": 11.0,
+      "height": 16.0,
+      "visible": false
+    },
+
+
+    {
+      "id": "armoire01",
+      "image": "images/armoire01.png",
+      "x": 82.0,
+      "y": 43.0,
+      "width": 18.0,
+      "height": 48.0,
+      "visible": true,
+
+      "actions": [
+
+        {
+          "type": "popup",
+          "title": "L'armoire",
+          "text": "Vous incitez le jeune à ranger correctement ses affaires dans son armoire.",
+          "button": "Ranger l'armoire",
+          "onClose": [
+
+            {
+              "type": "setObject",
+              "objectId": "armoire01",
+              "properties": {
+                "visible": false
+              }
+            },
+
+            {
+              "type": "setObject",
+              "objectId": "armoire02",
+              "properties": {
+                "visible": true
+              }
+            },
+
+            {
+              "type": "inventoryAdd",
+              "item": "armoire"
+            },
+
+            {
+              "type": "condition",
+              "condition": {
+                "type": "inventory",
+                "item": "lit"
+              },
+
+              "onSuccess": [
+                {
+                  "type": "condition",
+                  "condition": {
+                    "type": "inventory",
+                    "item": "corbeille"
+                  },
+
+                  "onSuccess": [
+                    {
+                      "type": "popup",
+                      "title": "Chambre terminée",
+                      "text": "Bravo ! Vous avez accompagné le volontaire dans la remise en ordre de sa chambre.",
+                      "onClose": [
+                        {
+                          "type": "returnToHost",
+                          "status": "completed"
+                        }
+                      ]
+                    }
+                  ],
+
+                  "onFailure": []
+                }
+              ],
+
+              "onFailure": []
+            }
+
+          ]
+        }
+
+      ]
+    },
+
+
+    {
+      "id": "armoire02",
+      "image": "images/armoire02.png",
+      "x": 82.0,
+      "y": 43.0,
+      "width": 18.0,
+      "height": 48.0,
+      "visible": false
+    }
+
+  ]
+}
