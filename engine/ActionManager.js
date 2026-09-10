@@ -55,16 +55,17 @@ export default class ActionManager {
                     this.engine.inventoryService.add(action.item);
                     break;
 
-                case "returnToHost":
-                    this.engine.emit("returnToHost", action);
-                    break;
-
                 case "setObject":
                     this.engine.setObjectState(
                         action.objectId,
                         action.properties
                     );
                     break;
+
+                case "returnToHost":
+                    this.engine.emit("returnToHost", action);
+                    break;
+
 
             }
             
