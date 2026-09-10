@@ -156,6 +156,22 @@ export default class Engine {
 
     }
 
+    setObjectState(objectId, properties) {
+
+        const object = this.scene.objects.find(
+            obj => obj.id === objectId
+        );
+        if (!object) {
+            console.warn(
+                `Objet introuvable : ${objectId}`
+            );
+            return;
+        }
+        Object.assign(object, properties);
+        this.renderer.render();
+
+    }
+
     stop() {
 
         // TODO :
