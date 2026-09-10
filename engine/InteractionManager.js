@@ -21,6 +21,10 @@ export default class InteractionManager {
 
         for (const object of this.engine.scene.objects) {
 
+                if (object.visible === false) {
+                    continue;
+                }
+
                 const canvas = this.engine.canvas;
 
                 const width = canvas.width * object.width / 100;
