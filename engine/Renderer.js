@@ -44,6 +44,10 @@ export default class Renderer {
 
         for (const object of this.engine.scene.objects) {
 
+            if (object.visible === false) {
+                continue;
+            }
+
             const width = canvas.width * object.width / 100;
             const height = canvas.height * object.height / 100;
 
