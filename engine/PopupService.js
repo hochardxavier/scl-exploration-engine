@@ -20,6 +20,9 @@ export default class PopupService {
             return;
         }
 
+        console.log("Popup reçue :", data);
+        console.log("onClose reçu :", data.onClose);
+
         // Conserver les données du popup (notamment onClose)
         this.options = data;
         
