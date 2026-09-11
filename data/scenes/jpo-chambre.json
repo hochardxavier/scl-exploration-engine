@@ -12,10 +12,10 @@
     {
       "id": "lit01",
       "image": "assets/sprites/lit01.png",
-      "x": 80,
+      "x": 75,
       "y": 60.0,
       "width": 55.0,
-      "height": 30,
+      "height": 32,
       "visible": true,
 
       "actions": [
@@ -94,10 +94,10 @@
     {
       "id": "lit02",
       "image": "assets/sprites/lit02.png",
-      "x": 80,
+      "x": 75,
       "y": 60.0,
       "width": 55.0,
-      "height": 30,
+      "height": 32,
       "visible": false,
       "actions":[]
     },
