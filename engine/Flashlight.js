@@ -10,15 +10,31 @@ export default class Flashlight {
         this.radius = 120;
         this.intensity = 0.90;
 
+        this.enabled = true;        
+
     }
 
-    init() {
+    init(config = {}) {
 
-        const canvas = this.engine.canvas;
-        
-     }
+        if (config.enabled !== undefined) {
+            this.enabled = config.enabled;
+        }
+
+        if (config.radius !== undefined) {
+            this.radius = config.radius;
+        }
+
+        if (config.intensity !== undefined) {
+            this.intensity = config.intensity;
+        }
+
+    }
 
     update() {
+
+        if (!this.enabled) {
+            return;
+        }
 
         const input = this.engine.inputManager;
 
@@ -28,6 +44,10 @@ export default class Flashlight {
     }
 
     render() {
+
+        if (!this.enabled) {
+            return;
+        }
 
         const ctx = this.engine.ctx;
         const canvas = this.engine.canvas;
