@@ -7,6 +7,8 @@ export default class Scene {
         this.background = data.background;
         this.objects = data.objects;
 
+        this.flashlight = data.flashlight;
+
     }
 
 }
