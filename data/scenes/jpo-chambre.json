@@ -61,17 +61,10 @@
 
                   "onSuccess": [
                     {
-                      "type": "popup",
-                      "title": "Chambre terminée",
-                      "text": "Bravo ! Vous avez accompagné le volontaire dans la remise en ordre de sa chambre.",
-                      "onClose": [
-                        {
-                          "type": "returnToHost",
-                          "result": "completed"
-                        }
-                      ]
-                    }
-                  ],
+                        "type": "returnToHost",
+                        "result": "completed"
+                   
+                    }                  ],
 
                   "onFailure": []
                 }
