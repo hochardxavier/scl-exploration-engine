@@ -13,9 +13,9 @@
       "id": "lit01",
       "image": "assets/sprites/lit01.png",
       "x": 55,
-      "y": 60.0,
+      "y": 80.0,
       "width": 55.0,
-      "height": 28,
+      "height": 30,
       "visible": true,
 
       "actions": [
@@ -95,9 +95,9 @@
       "id": "lit02",
       "image": "assets/sprites/lit02.png",
       "x": 55,
-      "y": 60.0,
+      "y": 80.0,
       "width": 55.0,
-      "height": 28,
+      "height": 30,
       "visible": false,
       "actions":[]
     },
