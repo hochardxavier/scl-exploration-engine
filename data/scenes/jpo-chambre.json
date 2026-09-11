@@ -12,9 +12,9 @@
     {
       "id": "lit01",
       "image": "assets/sprites/lit01.png",
-      "x": 50,
+      "x": 55,
       "y": 60.0,
-      "width": 48.0,
+      "width": 55.0,
       "height": 28,
       "visible": true,
 
@@ -94,9 +94,9 @@
     {
       "id": "lit02",
       "image": "assets/sprites/lit02.png",
-      "x": 50,
+      "x": 55,
       "y": 60.0,
-      "width": 48.0,
+      "width": 55.0,
       "height": 28,
       "visible": false,
       "actions":[]
@@ -108,7 +108,7 @@
       "image": "assets/sprites/corbeille02.png",
       "x": 82.0,
       "y": 69.0,
-      "width": 13.0,
+      "width": 15.0,
       "height": 16.0,
       "visible": true,
 
@@ -190,7 +190,7 @@
       "image": "assets/sprites/corbeille01.png",
       "x": 82.0,
       "y": 69.0,
-      "width": 13.0,
+      "width": 15.0,
       "height": 16.0,
       "visible": false,
       "actions":[]
@@ -201,7 +201,7 @@
       "id": "armoire02",
       "image": "assets/sprites/armoire02.png",
       "x": 45.2,
-      "y": 35.0,
+      "y": 32.0,
       "width": 17.0,
       "height": 40.0,
       "visible": true,
@@ -283,7 +283,7 @@
       "id": "armoire01",
       "image": "assets/sprites/armoire01.png",
       "x": 45.2,
-      "y": 35.0,
+      "y": 32.0,
       "width": 17.0,
       "height": 40.0,
       "visible": false,
