@@ -12,10 +12,10 @@
     {
       "id": "lit01",
       "image": "assets/sprites/lit01.png",
-      "x": 36.5,
-      "y": 51.0,
-      "width": 41.0,
-      "height": 29.5,
+      "x": 50,
+      "y": 60.0,
+      "width": 44.0,
+      "height": 29,
       "visible": true,
 
       "actions": [
@@ -94,10 +94,10 @@
     {
       "id": "lit02",
       "image": "assets/sprites/lit02.png",
-      "x": 36.5,
-      "y": 51.0,
-      "width": 41.0,
-      "height": 29.5,
+      "x": 50,
+      "y": 60.0,
+      "width": 44.0,
+      "height": 29,
       "visible": false,
       "actions":[]
     },
@@ -201,9 +201,9 @@
       "id": "armoire02",
       "image": "assets/sprites/armoire02.png",
       "x": 45.2,
-      "y": 40.0,
-      "width": 18.0,
-      "height": 48.0,
+      "y": 38.0,
+      "width": 17.0,
+      "height": 46.0,
       "visible": true,
 
       "actions": [
@@ -283,9 +283,9 @@
       "id": "armoire01",
       "image": "assets/sprites/armoire01.png",
       "x": 45.2,
-      "y": 40.0,
-      "width": 18.0,
-      "height": 48.0,
+      "y": 38.0,
+      "width": 17.0,
+      "height": 46.0,
       "visible": false,
       "actions":[]
     }
