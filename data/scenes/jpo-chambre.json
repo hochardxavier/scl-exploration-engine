@@ -12,9 +12,9 @@
     {
       "id": "lit01",
       "image": "assets/sprites/lit01.png",
-      "x": 72,
+      "x": 71,
       "y": 62.0,
-      "width": 65.0,
+      "width": 67.0,
       "height": 35,
       "visible": true,
 
@@ -94,9 +94,9 @@
     {
       "id": "lit02",
       "image": "assets/sprites/lit02.png",
-      "x": 72,
+      "x": 71,
       "y": 62.0,
-      "width": 65.0,
+      "width": 67.0,
       "height": 35,
       "visible": false,
       "actions":[]
@@ -106,7 +106,7 @@
     {
       "id": "corbeille02",
       "image": "assets/sprites/corbeille02.png",
-      "x": 82.0,
+      "x": 18.0,
       "y": 69.0,
       "width": 15.0,
       "height": 16.0,
@@ -188,7 +188,7 @@
     {
       "id": "corbeille01",
       "image": "assets/sprites/corbeille01.png",
-      "x": 82.0,
+      "x": 18.0,
       "y": 69.0,
       "width": 15.0,
       "height": 16.0,
