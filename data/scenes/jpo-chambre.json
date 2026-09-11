@@ -1,13 +1,13 @@
 {
   "id": "jpo-chambre",
   "name": "Chambre du volontaire",
-  "background": "images/chambre001.png",
+  "background": "assets/scenes/chambre001.png",
 
   "objects": [
 
     {
       "id": "lit01",
-      "image": "images/lit01.png",
+      "image": "assets/sprites/lit01.png",
       "x": 36.5,
       "y": 51.0,
       "width": 41.0,
@@ -89,7 +89,7 @@
 
     {
       "id": "lit02",
-      "image": "images/lit02.png",
+      "image": "assets/sprites/lit02.png",
       "x": 36.5,
       "y": 51.0,
       "width": 41.0,
@@ -100,7 +100,7 @@
 
     {
       "id": "corbeille01",
-      "image": "images/corbeille01.png",
+      "image": "assets/sprites/corbeille01.png",
       "x": 82.0,
       "y": 69.0,
       "width": 11.0,
@@ -182,7 +182,7 @@
 
     {
       "id": "corbeille02",
-      "image": "images/corbeille02.png",
+      "image": "assets/sprites/corbeille02.png",
       "x": 82.0,
       "y": 69.0,
       "width": 11.0,
@@ -193,7 +193,7 @@
 
     {
       "id": "armoire01",
-      "image": "images/armoire01.png",
+      "image": "assets/sprites/armoire01.png",
       "x": 82.0,
       "y": 43.0,
       "width": 18.0,
@@ -275,7 +275,7 @@
 
     {
       "id": "armoire02",
-      "image": "images/armoire02.png",
+      "image": "assets/sprites/armoire02.png",
       "x": 82.0,
       "y": 43.0,
       "width": 18.0,
