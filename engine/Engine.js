@@ -96,7 +96,7 @@ export default class Engine {
 
             this.background.onload = () => {
 
-                this.flashlight.init();
+                this.flashlight.init(this.scene.flashlight);
 
                 resolve();
 
