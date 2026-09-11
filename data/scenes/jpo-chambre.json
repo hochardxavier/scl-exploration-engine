@@ -61,10 +61,17 @@
 
                   "onSuccess": [
                     {
-                        "type": "returnToHost",
-                        "result": "completed"
-                   
-                    }                  ],
+                      "type": "popup",
+                      "title": "Chambre terminée",
+                      "text": "Bravo ! Vous avez accompagné le volontaire dans la remise en ordre de sa chambre.",
+                      "onClose": [
+                        {
+                          "type": "returnToHost",
+                          "result": "completed"
+                        }
+                      ]
+                    }
+                  ],
 
                   "onFailure": []
                 }
@@ -87,7 +94,8 @@
       "y": 51.0,
       "width": 41.0,
       "height": 29.5,
-      "visible": false
+      "visible": false,
+      "actions":[]
     },
 
 
@@ -111,7 +119,7 @@
 
             {
               "type": "setObject",
-              "objectId": "corbeille01",
+              "objectId": "corbeille02",
               "properties": {
                 "visible": false
               }
@@ -119,7 +127,7 @@
 
             {
               "type": "setObject",
-              "objectId": "corbeille02",
+              "objectId": "corbeille01",
               "properties": {
                 "visible": true
               }
@@ -174,19 +182,20 @@
 
 
     {
-      "id": "corbeille02",
-      "image": "assets/sprites/corbeille02.png",
+      "id": "corbeille01",
+      "image": "assets/sprites/corbeille01.png",
       "x": 82.0,
       "y": 69.0,
       "width": 11.0,
       "height": 16.0,
-      "visible": false
+      "visible": false,
+      "actions":[]
     },
 
 
     {
-      "id": "armoire01",
-      "image": "assets/sprites/armoire01.png",
+      "id": "armoire02",
+      "image": "assets/sprites/armoire02.png",
       "x": 82.0,
       "y": 43.0,
       "width": 18.0,
@@ -204,7 +213,7 @@
 
             {
               "type": "setObject",
-              "objectId": "armoire01",
+              "objectId": "armoire02",
               "properties": {
                 "visible": false
               }
@@ -212,7 +221,7 @@
 
             {
               "type": "setObject",
-              "objectId": "armoire02",
+              "objectId": "armoire01",
               "properties": {
                 "visible": true
               }
@@ -267,13 +276,14 @@
 
 
     {
-      "id": "armoire02",
-      "image": "assets/sprites/armoire02.png",
+      "id": "armoire01",
+      "image": "assets/sprites/armoire01.png",
       "x": 82.0,
       "y": 43.0,
       "width": 18.0,
       "height": 48.0,
-      "visible": false
+      "visible": false,
+      "actions":[]
     }
 
   ]
