@@ -3,6 +3,10 @@
   "name": "Chambre du volontaire",
   "background": "assets/scenes/chambre001.png",
 
+  "flashlight": {
+        "enabled": false
+    },
+
   "objects": [
 
     {
