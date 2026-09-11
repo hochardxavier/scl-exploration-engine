@@ -100,8 +100,8 @@
 
 
     {
-      "id": "corbeille01",
-      "image": "assets/sprites/corbeille01.png",
+      "id": "corbeille02",
+      "image": "assets/sprites/corbeille02.png",
       "x": 82.0,
       "y": 69.0,
       "width": 11.0,
