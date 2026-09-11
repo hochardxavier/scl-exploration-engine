@@ -67,22 +67,24 @@ export default class PopupService {
 
     close() {
 
-        console.log("Popup fermé");
+       console.log("Popup fermé");
 
         if (this.currentPopup) {
             this.currentPopup.remove();
             this.currentPopup = null;
         }
 
-        if (this.options?.onClose) {
+        // Sauvegarder les actions AVANT de remettre options à null
+        const onCloseActions = this.options?.onClose;
 
-            console.log("Actions onClose :", this.options.onClose);
-
-            this.engine.actionManager.handleActions(this.options.onClose);
-
-        }
-
+        // Nettoyer immédiatement les options du popup actuel
         this.options = null;
+
+        // Exécuter ensuite les actions
+        if (onCloseActions) {
+            console.log("Actions onClose :", onCloseActions);
+            this.engine.actionManager.handleActions(onCloseActions);
+        }
 
     }
 
