@@ -67,7 +67,7 @@
                       "onClose": [
                         {
                           "type": "returnToHost",
-                          "status": "completed"
+                          "result": "completed"
                         }
                       ]
                     }
@@ -160,7 +160,7 @@
                       "onClose": [
                         {
                           "type": "returnToHost",
-                          "status": "completed"
+                          "result": "completed"
                         }
                       ]
                     }
@@ -253,7 +253,7 @@
                       "onClose": [
                         {
                           "type": "returnToHost",
-                          "status": "completed"
+                          "result": "completed"
                         }
                       ]
                     }
