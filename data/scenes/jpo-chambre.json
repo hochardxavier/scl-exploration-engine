@@ -200,8 +200,8 @@
     {
       "id": "armoire02",
       "image": "assets/sprites/armoire02.png",
-      "x": 82.0,
-      "y": 43.0,
+      "x": 45.2,
+      "y": 40.0,
       "width": 18.0,
       "height": 48.0,
       "visible": true,
@@ -282,8 +282,8 @@
     {
       "id": "armoire01",
       "image": "assets/sprites/armoire01.png",
-      "x": 82.0,
-      "y": 43.0,
+      "x": 45.2,
+      "y": 40.0,
       "width": 18.0,
       "height": 48.0,
       "visible": false,
