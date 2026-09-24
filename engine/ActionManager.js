@@ -55,6 +55,10 @@ export default class ActionManager {
                     this.engine.inventoryService.add(action.item);
                     break;
 
+                case "inventoryRemove":
+                    this.engine.inventoryService.remove(action.item);
+                    break;
+
                 case "setObject":
                     this.engine.setObjectState(
                         action.objectId,
