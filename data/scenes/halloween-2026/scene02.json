@@ -1,1 +1,95 @@
+{
+    "id": "halloween02",
 
+    "name": "Fontaine Saillard",
+
+    "background": "assets/scenes/halloween-2026/fontaine.png",
+
+    "objects": [
+        {
+            "id": "ondine",
+
+            "image": "assets/sprites/halloween-2026/ondine.png",
+
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+
+            "visible": true,
+
+            "actions": [
+                {
+                    "type": "popup",
+                    "title": "La Dame de l'Eau",
+                    "image": "assets/sprites/halloween-2026/ondine.png",
+                    "text": "Vous cherchez le hussard. Il a succombé à la faim de la malédiction et recherche du sucre pour apaiser sa souffrance.",
+                    "button": "Suivant",
+                    "onClose": [
+                        {
+                            "type": "popup",
+                            "title": "La Dame de l'Eau",
+                            "image": "assets/sprites/halloween-2026/ondine.png",
+                            "text": "Si vous levez la malédiction, il retrouvera la paix du repos éternel, et cessera d'importuner les vivants.",
+                            "button": "Suivant",
+                            "onClose": [
+                                {
+                                    "type": "popup",
+                                    "title": "La Dame de l'Eau",
+                                    "image": "assets/sprites/halloween-2026/jack.png",
+                                    "text": "Pour cela vous devez lui offrir une tête dont la lueur des yeux transperce les ténèbres. Mon ami gnome peut vous aider.",
+                                    "button": "Suivant",
+                                    "onClose": [
+                                        {
+                                            "type": "popup",
+                                            "title": "La Dame de l'Eau",
+                                            "image": "assets/sprites/halloween-2026/ondine.png",
+                                            "text": "Vous le trouverez dans son potager, là où Gury croise la Route Neuve.",
+                                            "button": "Fermer"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "id": "bougie",
+
+            "image": "assets/sprites/halloween-2026/bougie.png",
+
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+
+            "visible": true,
+
+            "actions": [
+                {
+                    "type": "popup",
+                    "title": "La bougie",
+                    "image": "assets/sprites/halloween-2026/bougie.png",
+                    "text": "Vous récupérez cette bougie. C'est une très bonne idée.",
+                    "button": "Fermer",
+                    "onClose": [
+                        {
+                            "type": "inventoryAdd",
+                            "item": "bougie"
+                        },
+                        {
+                            "type": "setObject",
+                            "objectId": "bougie",
+                            "properties": {
+                                "visible": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
