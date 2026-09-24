@@ -34,21 +34,21 @@
                     
                     "text": "Cette vieille tombe n'a pas de nom, juste un texte presque effacé par le temps.",
                     
-                    "options": {
-                        "buttonText": "Suivant",
-                        
-                        "onClose": [
-                            {
-                                "type": "popup",
-                                
-                                "title": "La vieille tombe",
-                                
-                                "image": "assets/sprites/halloween-2026/stele.png",
-                                
-                                "text": "Brave hussard, à ton retour retrouve la Dame de l'Eau à la Fontaine Saillard.\nElle lèvera la malédiction.\nMais ne sombre pas dans la faim qui te tiraille."
-                            }
-                        ]
-                    }
+                    "button": "Suivant",
+                    
+                    "onClose": [
+                        {
+                            "type": "popup",
+                            
+                            "title": "La vieille tombe",
+                            
+                            "image": "assets/sprites/halloween-2026/stele.png",
+                            
+                            "text": "Brave hussard, à ton retour retrouve la Dame de l'Eau à la Fontaine Saillard.\nElle lèvera la malédiction.\nMais ne sombre pas dans la faim qui te tiraille.",
+                            
+                            "button": "Fermer"
+                        }
+                    ]
                 }
             ]
         },
@@ -82,15 +82,20 @@
                             
                             "image": "assets/sprites/halloween-2026/jack.png",
                             
-                            "text": "Vous taillez la citrouille en forme de tête. Avez-vous trouvé une bougie."
-                        },
-                        {
-                            "type": "inventoryAdd",
-                            "item": "jack"
-                        },
-                        {
-                            "type": "inventoryRemove",
-                            "item": "citrouille"
+                            "text": "Vous taillez la citrouille en forme de tête. Avez-vous trouvé une bougie ?",
+                            
+                            "button": "Fermer",
+                            
+                            "onClose": [
+                                {
+                                    "type": "inventoryAdd",
+                                    "item": "jack"
+                                },
+                                {
+                                    "type": "inventoryRemove",
+                                    "item": "citrouille"
+                                }
+                            ]
                         }
                     ],
                     
@@ -102,7 +107,9 @@
                             
                             "image": "assets/sprites/halloween-2026/cisaille.png",
                             
-                            "text": "Des cisailles... Elles semblent parfaitement adaptées pour tailler quelque chose. Mais quoi ?"
+                            "text": "Des cisailles... Elles semblent parfaitement adaptées pour tailler quelque chose. Mais quoi ?",
+                            
+                            "button": "Fermer"
                         }
                     ]
                 }
