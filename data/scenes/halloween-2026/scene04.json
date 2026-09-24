@@ -1,1 +1,131 @@
-
+{
+    "id": "halloween04",
+    
+    "name": "Forêt",
+    
+    "background": "assets/scenes/halloween-2026/foret.png",
+    
+    "flashlight": {
+        "enabled": true,
+        "radius": 150,
+        "intensity": 0.8
+    },
+    
+    "objects": [
+        {
+            "id": "hussard01",
+            
+            "image": "assets/sprites/halloween-2026/hussard01.png",
+            
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            
+            "visible": true,
+            
+            "actions": [
+                {
+                    "type": "condition",
+                    
+                    "condition": {
+                        "type": "inventory",
+                        "item": "jack"
+                    },
+                    
+                    "onSuccess": [
+                        {
+                            "type": "popup",
+                            
+                            "title": "Le Cavalier sans tête",
+                            
+                            "image": "assets/sprites/halloween-2026/hussard01.png",
+                            
+                            "text": "Le cavalier sans tête semble intrigué par votre Jack O'Lantern. Vous la lui remettez.",
+                            
+                            "button": "Fermer",
+                            
+                            "onClose": [
+                                {
+                                    "type": "setObject",
+                                    "objectId": "hussard01",
+                                    "properties": {
+                                        "visible": false
+                                    }
+                                },
+                                {
+                                    "type": "setObject",
+                                    "objectId": "hussard02",
+                                    "properties": {
+                                        "visible": true
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    
+                    "onFailure": [
+                        {
+                            "type": "popup",
+                            
+                            "title": "Le Cavalier sans tête",
+                            
+                            "image": "assets/sprites/halloween-2026/hussard01.png",
+                            
+                            "text": "Le hussard furieux fonce vers vous, le sabre brandi bien haut. Vous êtes obligé de fuir.",
+                            
+                            "button": "Suivant",
+                            
+                            "onClose": [
+                                {
+                                    "type": "popup",
+                                    
+                                    "title": "Le Cavalier sans tête",
+                                    
+                                    "image": "assets/sprites/halloween-2026/jack.png",
+                                    
+                                    "text": "Revenez avec une tête pour libérer le hussard de sa malédiction.",
+                                    
+                                    "button": "Fermer"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        
+        {
+            "id": "hussard02",
+            
+            "image": "assets/sprites/halloween-2026/hussard02.png",
+            
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            
+            "visible": false,
+            
+            "actions": [
+                {
+                    "type": "popup",
+                    
+                    "title": "Le Cavalier sans tête",
+                    
+                    "image": "assets/sprites/halloween-2026/hussard02.png",
+                    
+                    "text": "Le hussard apaisé vous salue avant de reprendre sa route. Vous avez résolu cette affaire, la fête d'Halloween peut reprendre.",
+                    
+                    "button": "Fin",
+                    
+                    "onClose": [
+                        {
+                            "type": "returnToHost"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
