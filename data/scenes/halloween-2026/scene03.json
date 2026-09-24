@@ -1,1 +1,95 @@
-
+{
+    "id": "halloween03",
+    
+    "name": "Potager",
+    
+    "background": "assets/scenes/halloween-2026/potager.png",
+    
+    "objects": [
+        {
+            "id": "gnome",
+            
+            "image": "assets/sprites/halloween-2026/gnome.png",
+            
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            
+            "visible": true,
+            
+            "actions": [
+                {
+                    "type": "popup",
+                    "title": "Le gnome",
+                    "image": "assets/sprites/halloween-2026/gnome.png",
+                    "text": "Le cavalier sans tête ? Oui, il est passé par ici.",
+                    "button": "Suivant",
+                    "onClose": [
+                        {
+                            "type": "popup",
+                            "title": "Le gnome",
+                            "image": "assets/sprites/halloween-2026/gnome.png",
+                            "text": "Si vous le cherchez, il est parti vers l'étang des sources.",
+                            "button": "Suivant",
+                            "onClose": [
+                                {
+                                    "type": "popup",
+                                    "title": "Le gnome",
+                                    "image": "assets/sprites/halloween-2026/cisaille.png",
+                                    "text": "Prenez une citrouille, mais il vous faudra trouver de quoi la tailler.",
+                                    "button": "Suivant",
+                                    "onClose": [
+                                        {
+                                            "type": "popup",
+                                            "title": "Le gnome",
+                                            "image": "assets/sprites/halloween-2026/gnome.png",
+                                            "text": "Surtout, ne passez pas les grilles de l'étang, c'est dangereux la nuit. Cherchez sur les chemins autour.",
+                                            "button": "Fermer"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        
+        {
+            "id": "citrouille",
+            
+            "image": "assets/sprites/halloween-2026/citrouille.png",
+            
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            
+            "visible": true,
+            
+            "actions": [
+                {
+                    "type": "popup",
+                    "title": "La citrouille",
+                    "image": "assets/sprites/halloween-2026/citrouille.png",
+                    "text": "Vous récupérez une belle citrouille. Il ne vous reste plus qu'à trouver de quoi la tailler.",
+                    "button": "Fermer",
+                    "onClose": [
+                        {
+                            "type": "inventoryAdd",
+                            "item": "citrouille"
+                        },
+                        {
+                            "type": "setObject",
+                            "objectId": "citrouille",
+                            "properties": {
+                                "visible": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
