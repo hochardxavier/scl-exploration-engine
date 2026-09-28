@@ -17,10 +17,10 @@
             
             "image": "assets/sprites/halloween-2026/stele.png",
             
-            "x": 50,
-            "y": 50,
-            "width": 10,
-            "height": 20,
+            "x": 30,
+            "y": 30,
+            "width": 30,
+            "height": 45,
             
             "visible": true,
             
@@ -58,10 +58,10 @@
             
             "image": "assets/sprites/halloween-2026/cisaille.png",
             
-            "x": 25,
-            "y": 75,
-            "width": 10,
-            "height": 10,
+            "x": 60,
+            "y": 65,
+            "width": 20,
+            "height": 20,
             
             "visible": true,
             
