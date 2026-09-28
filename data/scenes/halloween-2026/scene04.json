@@ -19,8 +19,8 @@
             
             "x": 50,
             "y": 50,
-            "width": 30,
-            "height": 40,
+            "width": 45,
+            "height": 60,
             
             "visible": true,
             
@@ -102,8 +102,8 @@
             
             "x": 50,
             "y": 50,
-            "width": 30,
-            "height": 40,
+            "width": 45,
+            "height": 60,
             
             "visible": false,
             
