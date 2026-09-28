@@ -6,7 +6,7 @@
     "background": "assets/scenes/halloween-2026/potager.png",
 
     "flashlight": {
-            "enabled": false,
+            "enabled": false
         },
     
     "objects": [
