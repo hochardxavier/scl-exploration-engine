@@ -17,10 +17,10 @@
             
             "image": "assets/sprites/halloween-2026/hussard01.png",
             
-            "x": 0,
-            "y": 0,
-            "width": 0,
-            "height": 0,
+            "x": 50,
+            "y": 50,
+            "width": 30,
+            "height": 40,
             
             "visible": true,
             
@@ -100,10 +100,10 @@
             
             "image": "assets/sprites/halloween-2026/hussard02.png",
             
-            "x": 0,
-            "y": 0,
-            "width": 0,
-            "height": 0,
+            "x": 50,
+            "y": 50,
+            "width": 30,
+            "height": 40,
             
             "visible": false,
             
