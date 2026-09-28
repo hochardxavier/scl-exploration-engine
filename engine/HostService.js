@@ -8,7 +8,7 @@ export default class HostService {
 
     
 
-    async receive(request) {
+    async receive(request, notify = () => {}) {
 
         const context = this.buildContext(request);
 
