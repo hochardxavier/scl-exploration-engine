@@ -88,7 +88,7 @@
                             }
                         },
                         {
-                            "type": "returnToHost",
+                            "type": "notifyHost",
                             "result": "inventoryUpdate"
                         }
                     ]
