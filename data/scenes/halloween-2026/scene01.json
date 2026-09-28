@@ -94,6 +94,10 @@
                                 {
                                     "type": "inventoryRemove",
                                     "item": "citrouille"
+                                },
+                                {
+                                    "type": "notifyHost",
+                                    "result": "inventoryUpdate"
                                 }
                             ]
                         }
