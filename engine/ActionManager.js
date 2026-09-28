@@ -70,6 +70,10 @@ export default class ActionManager {
                     this.engine.emit("returnToHost", action);
                     break;
 
+                case "notifyHost":
+                    this.engine.notifyHost(action);
+                    break;
+
 
             }
             
