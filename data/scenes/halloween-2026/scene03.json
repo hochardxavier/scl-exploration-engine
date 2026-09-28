@@ -15,7 +15,7 @@
             
             "image": "assets/sprites/halloween-2026/gnome.png",
             
-            "x": 18,
+            "x": 19,
             "y": 48,
             "width": 25,
             "height": 25,
@@ -65,8 +65,8 @@
             
             "image": "assets/sprites/halloween-2026/citrouille.png",
             
-            "x": 52,
-            "y": 53,
+            "x": 53,
+            "y": 52,
             "width": 25,
             "height": 20,
             
