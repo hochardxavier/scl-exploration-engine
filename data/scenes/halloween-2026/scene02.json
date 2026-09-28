@@ -5,16 +5,20 @@
 
     "background": "assets/scenes/halloween-2026/fontaine.png",
 
+    "flashlight": {
+            "enabled": false,
+        },
+
     "objects": [
         {
             "id": "ondine",
 
             "image": "assets/sprites/halloween-2026/ondine.png",
 
-            "x": 0,
-            "y": 0,
-            "width": 0,
-            "height": 0,
+            "x": 60,
+            "y": 40,
+            "width": 25,
+            "height": 25,
 
             "visible": true,
 
@@ -61,10 +65,10 @@
 
             "image": "assets/sprites/halloween-2026/bougie.png",
 
-            "x": 0,
-            "y": 0,
-            "width": 0,
-            "height": 0,
+            "x": 25,
+            "y": 75,
+            "width": 15,
+            "height": 15,
 
             "visible": true,
 
