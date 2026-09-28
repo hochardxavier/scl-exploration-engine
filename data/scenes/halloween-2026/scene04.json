@@ -8,7 +8,7 @@
     "flashlight": {
         "enabled": true,
         "radius": 150,
-        "intensity": 0.8
+        "intensity": 0.9
     },
     
     "objects": [
@@ -17,7 +17,7 @@
             
             "image": "assets/sprites/halloween-2026/hussard01.png",
             
-            "x": 50,
+            "x": 55,
             "y": 50,
             "width": 45,
             "height": 60,
@@ -100,7 +100,7 @@
             
             "image": "assets/sprites/halloween-2026/hussard02.png",
             
-            "x": 50,
+            "x": 55,
             "y": 50,
             "width": 45,
             "height": 60,
