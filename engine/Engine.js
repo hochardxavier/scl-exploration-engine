@@ -172,6 +172,12 @@ export default class Engine {
 
     }
 
+    notifyHost(action) {
+
+        this.emit("hostUpdate", action);
+
+    }
+
     stop() {
 
         // TODO :
