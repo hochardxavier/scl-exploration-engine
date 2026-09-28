@@ -44,7 +44,10 @@ export default class BrowserHostAdapter {
     async handleLaunch(payload) {
 
         const response =
-            await this.hostService.receive(payload);
+            await this.hostService.receive(
+                payload,
+                (update) => this.send(update)
+            );
 
         this.send(response);
 
