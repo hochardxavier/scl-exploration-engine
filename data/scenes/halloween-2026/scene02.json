@@ -86,6 +86,10 @@
                             "properties": {
                                 "visible": false
                             }
+                        },
+                        {
+                            "type": "notifyHost",
+                            "result": "inventoryUpdate"
                         }
                     ]
                 }
