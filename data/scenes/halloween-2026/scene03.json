@@ -66,9 +66,9 @@
             "image": "assets/sprites/halloween-2026/citrouille.png",
             
             "x": 53,
-            "y": 54,
+            "y": 53.8,
             "width": 25,
-            "height": 20,
+            "height": 18,
             
             "visible": true,
             
