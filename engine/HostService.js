@@ -26,6 +26,12 @@ export default class HostService {
 
             });
 
+            this.engine.on("hostUpdate", (action) => {
+
+                notify(this.buildUpdate(action));
+
+            });
+
             this.engine.start();
 
         });
@@ -71,6 +77,22 @@ export default class HostService {
                 ...context
 
             };   
+
+    }
+
+    buildUpdate(action) {
+
+        const context = this.engine.getContext();
+
+        return {
+
+            status: "update",
+
+            result: action.result,
+
+            ...context
+
+        };
 
     }
 
