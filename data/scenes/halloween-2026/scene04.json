@@ -30,7 +30,7 @@
                     
                     "condition": {
                         "type": "inventory",
-                        "item": "jack"
+                        "item": ["jack", "bougie"]
                     },
                     
                     "onSuccess": [
