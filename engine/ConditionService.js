@@ -59,15 +59,23 @@ export default class ConditionService {
 
             case "inventory":
 
-                callback(
+                if (Array.isArray(action.condition.item)) {
 
-                    this.engine.inventoryService.has(
+                    callback(
+                        action.condition.item.every(
+                            item => this.engine.inventoryService.has(item)
+                        )
+                    );
 
-                        action.condition.item
+                } else {
 
-                    )
+                    callback(
+                        this.engine.inventoryService.has(
+                            action.condition.item
+                        )
+                    );
 
-                );
+                }
 
                 break;
 
