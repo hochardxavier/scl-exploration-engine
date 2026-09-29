@@ -121,7 +121,8 @@
                     
                     "onClose": [
                         {
-                            "type": "returnToHost"
+                            "type": "returnToHost",
+                            "result": "completed"
                         }
                     ]
                 }
